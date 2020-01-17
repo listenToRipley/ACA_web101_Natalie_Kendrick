@@ -1,0 +1,31 @@
+.main-container {
+    border: 2px solid magenta;
+    height: 100%;
+    width: 100%;
+    background-color: steelblue;
+}
+
+.header{
+    font-size: 15px;
+    color: white;
+    margin: 1px, 1px, 1px, 1px;
+    background-color: darkblue;
+    text-align: end;
+}
+
+#bar {
+    background-color: white;
+    color: seagreen;
+    text-align: end;
+}
+
+
+.align {
+    border: 2px solid grey;
+    margin: 10px 50px 10px 50px;
+}
+
+.group {
+    border-bottom: 2px solid slategrey;
+    background-color: snow;
+}

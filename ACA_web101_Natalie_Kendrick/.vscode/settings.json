@@ -2,7 +2,7 @@
     "liveServer.settings.useBrowserPreview": true,
     "liveServer.settings.useLocalIp": true,
     "liveServer.settings.useWebExt": true, 
-    "liveServer.settings.port": 4000,
+    "liveServer.settings.port": 4500,
     "liveServer.settings.root": "/Users/moonbox/Desktop/myPortfolio",
     "liveServer.settings.CustomBrowser" : "chrome",
     "liveServer.settings.NoBrowser" : true,
