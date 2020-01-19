@@ -7,5 +7,9 @@
         "latex",
         "plaintext",
         "html"
-    ]
+    ],
+    "browser-preview.startUrl": "",
+    "files.autoSave": "afterDelay",
+    "editor.renderWhitespace": "all",
+    "editor.wordWrap": "on"
 }
