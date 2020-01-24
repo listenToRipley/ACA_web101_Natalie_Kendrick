@@ -1,0 +1,67 @@
+body {
+    background-color: cornsilk;
+}
+
+img {
+    width: 65%;
+    height: 35%;
+}
+
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
+
+/* 
+
+class code
+
+body {
+    background-color: black ;
+}
+.contain {
+    height: 100%;
+    width: 100%;
+    border: 1px solid orange;
+}
+li {
+    border: 1px solid orange;
+    list-style-type: none;
+    margin: 0;
+    height: 10px;
+    width: 200px;
+    background-color: palegreen;
+    display: inline-block;
+}
+
+ul {
+    border: 1px solid orange;
+    height: 100px;
+    width: 100px; 
+}
+ @media (min-width: 576px) and (max-width: 805px) {
+    body {
+        background-color: chocolate;
+    }
+    li {
+        display: inline;
+    }
+} */

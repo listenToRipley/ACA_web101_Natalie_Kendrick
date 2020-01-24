@@ -1,0 +1,104 @@
+
+body {
+    background-color: black;
+}
+main { 
+    border: 2px solid seashell;
+    height: 95%;
+    width: 95%;
+    background-color:skyblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: minmax(8px auto);
+    margin: 2%;
+    grid-gap: 1%;
+    grid-template-areas: initial;
+    /* justify-items: center; */
+    /* align-content: center; */
+}
+
+ol * {
+    display: inline-block;
+    list-style-type: none;
+    font-weight: normal;
+}
+
+li {
+    display: block;
+}
+
+.skills {
+    display: flex;
+    padding: 15px;
+}
+
+.nav {
+    display: block;
+    background-color: black;
+    color: blanchedalmond;
+    float: inline-end;
+}
+
+
+img {
+    grid-area: profile;
+    background-color: lavenderblush;
+    width: 80%;
+    height: 60%;
+    padding: 10% 10% 10% 10%;
+    align-items: center;
+    justify-content: center;
+}
+
+#bio {
+    /* grid-area: bio; */
+    background-color: lightgreen;
+    padding: 15% 10% 0, 10%;
+    margin-right: 12%;
+}
+
+.skills {
+    grid-area: skills;
+    background-color: maroon;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/* #hard #soft #weak > {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: 70px;
+} */
+
+
+.sectionTitle {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#contact {
+    display: inline;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: thistle;
+    grid-gap: 14px;
+    justify-self: center; 
+    align-self: end; 
+}
+
+#contact li {
+    display: block;
+    padding-right: 25%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-self: center;
+    background-color: black;
+    color: white
+}
