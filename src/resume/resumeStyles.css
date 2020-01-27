@@ -27,7 +27,7 @@ ol * {
 }
 
 li {
-    display: blockxs;
+    display: block;
 }
 
 .skills {
@@ -39,7 +39,14 @@ li {
     display: block;
     background-color: black;
     color: blanchedalmond;
-    float: inline-end;
+}
+
+#name {
+    margin-left: 80px;
+}
+
+.nav a {
+    padding: 10px;
 }
 
 
@@ -73,6 +80,10 @@ img {
     grid-auto-rows: 70px;
 } */
 
+#hard #soft #weak {
+    float: right;
+    overflow: hidden;
+}
 
 .sectionTitle {
     font-size: 15px;
