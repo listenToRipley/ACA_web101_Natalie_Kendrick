@@ -11,16 +11,22 @@ body {
 }
 
 img {
-    grid-area: image; 
-    width: 65%;
-    height: 35%;
+    /* grid-area: image;  */
+    width: 60%;
+    height: 30%;
+    padding: 1 % auto;
     }
 
-    .image-sidebar {
+    #image-sidebar {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin: 25px auto;
+        list-style: none;
+        margin: 5% auto;
+        font-size: initial;
+    }
+ul {
+        font-size: 15px;
     }
 
 /* moved #sidebar from here */
@@ -59,25 +65,13 @@ img {
 /* Extra Small and up (Portrait Phones) */
 
 /* Medium and up (Tablets) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     #sidebar {
         display: none;
     }
 }
 
 /* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-    #sidebar {
-        display: none;
-    }
-    #button {
-        display: none;
-    }
-    /* footer {
-        display: none;
-    } didn't work*/
-}
-
 @media (max-width: 576px) {
     #sidebar {
         display: none;
@@ -85,28 +79,22 @@ img {
     #button {
         display: none;
     }
+    #lowerbar {
+        height: 10%;
+    }
+    /* footer {
+        display: none;
+    } didn't work*/
+}
+
     /* .footer {
         height: 40%;
-    } 8
-} 
-
+    } 8 */
 /* Large and up (Desktops) */
-@media (min-width: 992px) {
-    #sidebar {
-        list-style: none;
-        padding: 15px;
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-    }
-} 
 
 
-/* 
 
-class code
-
-body {
+/* body {
     background-color: black ;
 }
 .contain {
@@ -114,6 +102,7 @@ body {
     width: 100%;
     border: 1px solid orange;
 }
+
 li {
     border: 1px solid orange;
     list-style-type: none;
@@ -129,11 +118,11 @@ ul {
     height: 100px;
     width: 100px; 
 }
- @media (min-width: 576px) and (max-width: 805px) {
+ @media (min-width: 576px) and (max-width: 805px) {}
     body {
         background-color: chocolate;
     }
     li {
         display: inline;
-    }
-} */
+    }  */
+
