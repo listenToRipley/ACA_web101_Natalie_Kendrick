@@ -14,7 +14,7 @@ img {
     /* grid-area: image;  */
     width: 60%;
     height: 30%;
-    padding: 1% auto;
+    padding: 3% auto;
     }
 
     #image-sidebar {
@@ -82,6 +82,23 @@ ul {
     #lowerbar {
         height: 10%;
     }
+
+    
+  /* couldn't get the row to wrap */
+
+    .footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    /* .footer #social {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    } */
+
+
     /* footer {
         display: none;
     } didn't work*/
