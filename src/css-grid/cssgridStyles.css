@@ -60,13 +60,123 @@ main.main-container {
     list-style: none;
 }
 
+.container{
+    font-family: 'Roboto', sans-serif;
+    width: 280px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .screen{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    background-color: #21435E;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .dots{
+    padding: 5px 20px;
+    margin: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px;
+  }
+  .dot.red{
+    background-color:#FF564F;
+  }
+  .dot.yellow{
+    background-color:#F2B72E;
+  }
+  .dot.green{
+    background-color:#26D040;
+  }
+  .numbers{
+    align-self: center;
+    text-align: right;
+    padding: 5px 20px;
+    color: #ffff;
+  }
+  .top{
+    font-size: 25px;
+    color:#90A0AC;
+  }
+  .bottom{
+    font-size: 40px;
+  }
+  .row{
+    position: relative;
+    display: flex;
+  }
+  button{
+    width: 70px;
+    padding: 25px 0 25px 0;
+    border-color: #90a0ac38;
+    border-width: thin; 
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  button:active {
+    background-image: linear-gradient(to bottom, #d4dbe0ba 0%, #a9b6c036 51%, #7c909eba 100%);
+  } 
+  button:focus {
+      outline: none;
+  }
+  .row:nth-child(2) button{
+    background-color: #506A7F;
+    color: #f2f2f2;
+  }
+  .row:nth-child(3) button{
+    background-color: #7C909E;
+    color: #f2f2f2;
+  }
+  .row:nth-child(4) button{
+    background-color: #A9B6C0;
+    color: #f2f2f2;
+  }
+  .row:nth-child(5) button{
+    background-color: #D4DBE0;
+    color: #90A0AC
+  }
+  .row:nth-child(6) button{
+    background-color: #F6F6F6;
+    color: #90A0AC;
+  }
+  .row:nth-child(6) button:last-child {
+    background-color: #F6932D;
+    color: #f2f2f2;
+    border-bottom-right-radius: 6px;
+  }
+  .row:nth-child(6) button:first-child {
+    width: 140px;
+    border-bottom-left-radius: 6px;
+    text-align: left;
+    padding: 25px 30px;
+  }
+  button:nth-child(4){
+    text-align: right;
+    padding: 25px 30px;
+  }
+
 /* clock code */
 
 #time {
     background: 1px solid fuchsia;
     /* background-color: greenyellow; */
     grid-column: 2/4;
-    grid-row: 3/4;
+    grid-row: 3;
 }
 
 .seconds,
