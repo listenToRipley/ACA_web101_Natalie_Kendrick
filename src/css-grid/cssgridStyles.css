@@ -2,7 +2,7 @@ body {
     background-image: url(mushrooms.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Playfair Display SC', serif;
     color: #ffebc7;
 }
 
@@ -12,16 +12,13 @@ main.main-container {
     grid-template-rows: 20% 15% 1fr 20%;
     grid-gap: 20px;
     font-size: 20px;
-    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Playfair Display SC', serif;
 }
 
 .top {
     display: grid;
-    /* border: 1px solid brown; */
-    /* background: cornflowerblue; */
     grid-column: 2/6;
     grid-row: 2/3;
-    /* grid-template-columns: repeat(3, 1fr); */
     grid-template-rows: repeat(2, 1fr);
     padding: 2% auto;
 }
@@ -32,41 +29,29 @@ main.main-container {
 }
 
 h3 {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
-#toDo {
-    /* background: 1px solid honeydew; */
-    /* background-color: indigo; */   
+#toDo {  
     grid-column: 4/6;
     grid-row: 3/7;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 
 /* calculator  */
 
 #calculator {
     background: 1px solid springgreen;
-    /* background-color: violet; */
     grid-column: 2/4;
     grid-row: 3;
-    /* grid-template-columns: subgrid; */
-    font-family: 'Fredericka the Great', cursive;
-    /* grid-template-rows: subgrid; */
 }
 
 #number.sublist{
     display: grid;
-    /* grid-template-rows: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr); */
-    /* background: 1px solid rgb(146, 29, 9); */
-    /* background-color: lavender;
-    color: darkblue; */
     list-style: none;
 }
 
 .container{
-    /* font-family: 'Roboto', sans-serif; */
     width: 280px;
     margin: auto;
     margin-top: 30px;
@@ -118,27 +103,27 @@ h3 {
       outline: none;
   }
   .row:nth-child(2) button{
-    background-color: #506A7F;
+    background-color: rgb(80, 106, 127, 40%);
     color: #f2f2f2;
   }
   .row:nth-child(3) button{
-    background-color: #7C909E;
+    background-color: rgb(124, 144, 158, 40%);
     color: #f2f2f2;
   }
   .row:nth-child(4) button{
-    background-color: #A9B6C0;
+    background-color: rgb(169, 182, 192, 40%);
     color: #f2f2f2;
   }
   .row:nth-child(5) button{
-    background-color: #D4DBE0;
-    color: #90A0AC
+    background-color: rgb(212, 219, 224, 40%);
+    color: #f2f2f2
   }
   .row:nth-child(6) button{
-    background-color: #F6F6F6;
-    color: #90A0AC;
+    background-color: rgb(246, 246, 246, 40%);
+    color: #f2f2f2;
   }
   .row:nth-child(6) button:last-child {
-    background-color: #F6932D;
+    background-color: rgb(246, 147, 45, 40%);
     color: #f2f2f2;
     border-bottom-right-radius: 6px;
   }
@@ -158,10 +143,10 @@ h3 {
 #time {
     /* background: 1px solid fuchsia; */
     /* background-color: greenyellow; */
-    grid-column: 4/6;
+    grid-column: 5/6;
     grid-row: 2;
     align-self: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .seconds,
