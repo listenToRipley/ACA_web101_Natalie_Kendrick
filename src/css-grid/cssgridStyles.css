@@ -1,5 +1,8 @@
 body {
-    background-color: blue;
+    background-image: url(mushrooms.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dosis', sans-serif;
 }
 
 main.main-container {
@@ -7,6 +10,8 @@ main.main-container {
     grid-template-columns: 8% repeat(4, 1fr) 8%;
     grid-template-rows: 20% 15% repeat(3, 1fr) 20%;
     grid-gap: 20px;
+    font-size: 20px;
+    font-family: 'Fredericka the Great', cursive;
 }
 
 .top {
@@ -19,6 +24,7 @@ main.main-container {
     grid-template-rows: repeat(2, 1fr);
     align-content: center;
     padding: 2% auto;
+    font-family: inherit;
 }
 
 /* h1 {
@@ -39,6 +45,7 @@ main.main-container {
     color: white;
     grid-column: 4/6;
     grid-row: 3/7;
+    font-family: 'Dosis', sans-serif;
 }
 
 #calculator {
