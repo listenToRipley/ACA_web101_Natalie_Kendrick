@@ -9,7 +9,7 @@ body {
 main.main-container {
     display: grid;
     grid-template-columns: 8% repeat(4, 1fr) 8%;
-    grid-template-rows: 20% 15% repeat(3, 1fr) 20%;
+    grid-template-rows: 20% 15% 1fr 20%;
     grid-gap: 20px;
     font-size: 20px;
     font-family: 'Fredericka the Great', cursive;
@@ -17,7 +17,7 @@ main.main-container {
 
 .top {
     display: grid;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     /* background: cornflowerblue; */
     grid-column: 2/6;
     grid-row: 2/3;
@@ -28,11 +28,15 @@ main.main-container {
 
 #greeting {
     align-self: center;
+    color: #ffebc7;
 }
 
+h3 {
+    font-family: 'Dosis', sans-serif;
+}
 
 #toDo {
-    background: 1px solid honeydew;
+    /* background: 1px solid honeydew; */
     /* background-color: indigo; */   
     grid-column: 4/6;
     grid-row: 3/7;
@@ -45,8 +49,9 @@ main.main-container {
     background: 1px solid springgreen;
     /* background-color: violet; */
     grid-column: 2/4;
-    grid-row: 4/7;
-    grid-template-columns: subgrid;
+    grid-row: 3;
+    /* grid-template-columns: subgrid; */
+    font-family: 'Fredericka the Great', cursive;
     /* grid-template-rows: subgrid; */
 }
 
@@ -54,14 +59,14 @@ main.main-container {
     display: grid;
     /* grid-template-rows: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); */
-    background: 1px solid rgb(146, 29, 9);
-    background-color: lavender;
-    color: darkblue;
+    /* background: 1px solid rgb(146, 29, 9); */
+    /* background-color: lavender;
+    color: darkblue; */
     list-style: none;
 }
 
 .container{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     width: 280px;
     margin: auto;
     margin-top: 30px;
@@ -71,33 +76,11 @@ main.main-container {
     display: flex;
     justify-content: flex-end;
     height: 120px;
-    background-color: #21435E;
+    background-color:rgb(33, 67, 94, 40%);
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
   }
-  .dots{
-    padding: 5px 20px;
-    margin: 5px 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .dot {
-    height: 8px;
-    width: 8px;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 2px;
-  }
-  .dot.red{
-    background-color:#FF564F;
-  }
-  .dot.yellow{
-    background-color:#F2B72E;
-  }
-  .dot.green{
-    background-color:#26D040;
-  }
+
   .numbers{
     align-self: center;
     text-align: right;
@@ -173,10 +156,12 @@ main.main-container {
 /* clock code */
 
 #time {
-    background: 1px solid fuchsia;
+    /* background: 1px solid fuchsia; */
     /* background-color: greenyellow; */
-    grid-column: 2/4;
-    grid-row: 3;
+    grid-column: 4/6;
+    grid-row: 2;
+    align-self: center;
+    font-size: 35px;
 }
 
 .seconds,
@@ -188,6 +173,7 @@ main.main-container {
   height: 12px;
   width: 6px;
   display:inline-block;
+  align-content: flex-end;
 }
 
 .hours {
