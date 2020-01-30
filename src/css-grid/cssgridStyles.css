@@ -30,12 +30,6 @@ main.main-container {
     align-self: center;
 }
 
-#time {
-    background: 1px solid fuchsia;
-    /* background-color: greenyellow; */
-    grid-column: 2/4;
-    grid-row: 3/4;
-}
 
 #toDo {
     background: 1px solid honeydew;
@@ -44,6 +38,8 @@ main.main-container {
     grid-row: 3/7;
     font-family: 'Dosis', sans-serif;
 }
+
+/* calculator  */
 
 #calculator {
     background: 1px solid springgreen;
@@ -56,10 +52,287 @@ main.main-container {
 
 #number.sublist{
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
     background: 1px solid rgb(146, 29, 9);
     background-color: lavender;
     color: darkblue;
     list-style: none;
+}
+
+/* clock code */
+
+#time {
+    background: 1px solid fuchsia;
+    /* background-color: greenyellow; */
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+.seconds,
+.seconds-left,
+.minutes-left,
+.minutes,
+.hours {
+  position: relative;
+  height: 12px;
+  width: 6px;
+  display:inline-block;
+}
+
+.hours {
+  width: 14px;
+}
+
+.seconds span,
+.seconds-left span,
+.minutes-left span,
+.minutes span,
+.hours span {
+  position: absolute;
+  top: 0;
+  left:0;
+  opacity: 0;
+} 
+
+/*--------------hours-----------------*/
+.h-0 {
+  animation: 43200s twelve linear infinite;
+}
+.h-1 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 3600s;
+}
+.h-2 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 7200s;
+}
+.h-3 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 10800s;
+}
+.h-4 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 14400s;
+}
+.h-5 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 18000s;
+}
+.h-6 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 21600s;
+}
+.h-7 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 25200s;
+}
+.h-8 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 28800s;
+}
+.h-9 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 32400s;
+}
+.h-10 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 36000s;
+}
+.h-11 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 39600s;
+}
+/*--------------hours-end----------------*/
+
+/*---------------minutes----------------*/
+.ml-0 {
+  animation: 3600s six linear infinite;
+}
+.ml-1 {
+  animation: 3600s six linear infinite;
+  animation-delay: 600s;
+}
+.ml-2 {
+  animation: 3600s six linear infinite;
+  animation-delay: 1200s;
+}
+.ml-3 {
+  animation: 3600s six linear infinite;
+  animation-delay: 1800s;
+}
+.ml-4 {
+  animation: 3600s six linear infinite;
+  animation-delay: 2400s;
+}
+.ml-5 {
+  animation: 3600s six linear infinite;
+  animation-delay: 3000s;
+}
+
+.m-0 {
+  animation: 600s ten linear infinite;
+}
+.m-1 {
+  animation: 600s ten linear infinite;
+  animation-delay: 60s;
+}
+.m-2 {
+  animation: 600s ten linear infinite;
+  animation-delay: 120s;
+}
+.m-3 {
+  animation: 600s ten linear infinite;
+  animation-delay: 180s;
+}
+.m-4 {
+  animation: 600s ten linear infinite;
+  animation-delay: 240s;
+}
+.m-5 {
+  animation: 600s ten linear infinite;
+  animation-delay: 300s;
+}
+.m-6 {
+  animation: 600s ten linear infinite;
+  animation-delay: 360s;
+}
+.m-7 {
+  animation: 600s ten linear infinite;
+  animation-delay: 420s;
+}
+.m-8 {
+  animation: 600s ten linear infinite;
+  animation-delay: 480s;
+}
+.m-9 {
+  animation: 600s ten linear infinite;
+  animation-delay: 540s;
+}
+.m-10 {
+  animation: 600s ten linear infinite;
+  animation-delay: 600s;
+}
+/*-------------minutes-end------------*/
+
+
+/*-------------seconds---------------*/
+.sl-0 {
+  animation: 60s six linear infinite;
+}
+
+.sl-1 {
+  animation: 60s six linear infinite;
+  animation-delay: 10s;
+}
+
+.sl-2 {
+  animation: 60s six linear infinite;
+  animation-delay: 20s;
+}
+.sl-3 {
+  animation: 60s six linear infinite;
+  animation-delay: 30s;
+}
+.sl-4 {
+  animation: 60s six linear infinite;
+  animation-delay: 40s;
+}
+.sl-5 {
+  animation: 60s six linear infinite;
+  animation-delay: 50s;
+}
+.sl-6 {
+  animation: 60s six linear infinite;
+  animation-delay: 60s;
+}
+
+.s-0 {
+  animation: 10s ten linear infinite;
+}
+.s-1 {
+  animation: 10s ten linear infinite;
+  animation-delay: 1s;
+}
+.s-2 {
+  animation: 10s ten linear infinite;
+  animation-delay: 2s;
+}
+.s-3 {
+  animation: 10s ten linear infinite;
+  animation-delay: 3s;
+}
+.s-4 {
+  animation: 10s ten linear infinite;
+  animation-delay: 4s;
+}
+.s-5 {
+  animation: 10s ten linear infinite;
+  animation-delay: 5s;
+}
+.s-6 {
+  animation: 10s ten linear infinite;
+  animation-delay: 6s;
+}
+.s-7 {
+  animation: 10s ten linear infinite;
+  animation-delay: 7s;
+}
+.s-8 {
+  animation: 10s ten linear infinite;
+  animation-delay: 8s;
+}
+.s-9 {
+  animation: 10s ten linear infinite;
+  animation-delay: 9s;
+}
+.s-10 {
+  animation: 10s ten linear infinite;
+  animation-delay: 10s;
+}
+/*-------------seconds-end---------------*/
+
+@keyframes ten {
+  0% {
+    opacity: 1;
+  }
+  9.9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes six {
+  0% {
+    opacity: 1;
+  }
+  16.599% {
+    opacity: 1;
+  }
+  16.6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes twelve {
+  0% {
+    opacity: 1;
+  }
+  8.33% {
+    opacity: 1;
+  }
+  8.34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
 }
