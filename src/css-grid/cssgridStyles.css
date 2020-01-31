@@ -40,6 +40,8 @@ h3 {
 
 /* calculator  */
 
+/* ------I can't take credit for this, stole it from Code Pen: https://codepen.io/yukselyumrutas/pen/NQrVQP ------ */
+
 #calculator {
     background: 1px solid springgreen;
     grid-column: 2/4;
@@ -141,8 +143,6 @@ h3 {
 /* clock code */
 
 #time {
-    /* background: 1px solid fuchsia; */
-    /* background-color: greenyellow; */
     grid-column: 5/6;
     grid-row: 2;
     align-self: center;
@@ -176,6 +176,7 @@ h3 {
   opacity: 0;
 } 
 
+/* ------I can't take credit for this, stole it from Code Pen:  ------ */
 /*--------------hours-----------------*/
 .h-0 {
   animation: 43200s twelve linear infinite;
