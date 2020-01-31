@@ -1,14 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
 body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: auto;
   background-color: rgb(255, 255, 255);
 }
 
-header .nasa {
+.top .nasa {
   background-color: black;
   background-image: url(nasaImage.jpg);
   background-size: cover;
@@ -18,11 +16,12 @@ header .nasa {
   position: absolute;
 } */
 
-main .flexbox {
+main {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 1fr;
+  align-items: flex-end;
+  width: 1fr 1fr 1fr;
+  margin: 0 auto;
 }
 
 .social {
