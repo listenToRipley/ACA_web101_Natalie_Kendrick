@@ -7,16 +7,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.flexbox {
-  display: flex;
-  flex: wrap;
-  flex-direction: row;
-  margin: 1% auto;
-  background-color: grey;
-  width:100%;
-}
-
-
 .nasa #img {
   background-color: black;
   background-image: url(nasa.jpg);
@@ -40,6 +30,15 @@ body {
   -webkit-text-stroke-width: 1px;
 }
 
+.flexbox {
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  margin-top: 2%;
+  background-color: grey;
+  width:100%;
+}
+
 .social {
   width: 30%;
 }
@@ -54,4 +53,24 @@ ul li {
 
 .contact {
   width: 30%;
+}
+
+button {
+  background-color: black;
+  color: rgb(207, 204, 204);
+  border: none;
+}
+
+#box1 {
+  border: 1px solid rgb(207, 204, 204);
+  width: 8em;
+  height: 1.5em;
+  background-color: rgb(207, 204, 204);
+}
+
+#box2 {
+  border: 1px solid rgb(207, 204, 204);
+  width: 8em;
+  height: 5em;
+  background-color: rgb(207, 204, 204) ;
 }
