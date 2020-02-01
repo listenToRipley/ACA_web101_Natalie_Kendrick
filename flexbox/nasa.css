@@ -25,7 +25,7 @@ body {
   position: absolute;
   font-size: 20vh;
   padding-left: 40%;
-  padding-top: 10%;
+  padding-top: 7%;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
 }
@@ -53,6 +53,14 @@ ul li {
 
 .contact {
   width: 30%;
+}
+
+.box-item h4 {
+  padding-left: 15%;
+}
+
+.box-item p {
+  padding: 0 5% 0 15%;
 }
 
 button {
