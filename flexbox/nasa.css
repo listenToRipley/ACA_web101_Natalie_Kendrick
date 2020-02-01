@@ -3,6 +3,7 @@ body {
   padding: 0;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
 
@@ -12,23 +13,30 @@ body {
   flex-direction: row;
   margin: 1% auto;
   background-color: grey;
-  align-items: center;
-  justify-content: center;
   width:100%;
 }
 
 
-.nasa {
+.nasa #img {
   background-color: black;
-  background-image: url(nasaImage.jpg);
+  background-image: url(nasa.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   resize: both;
-  color: grey;
-  background-origin: border-box;
+  margin: 50px;
+  padding: 0 auto;
+  margin: 0 auto;
 } 
+
+#title {
+  color: grey;
+  position: absolute;
+  font-size: 20vh;
+  padding-left: 40%;
+  padding-top: 10%;
+}
 
 .social {
   width: 30%;
