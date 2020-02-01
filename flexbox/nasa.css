@@ -50,15 +50,23 @@ ul li {
 }
 
 li {
-  padding: .5em;
+  padding: .3em;
 }
 
 .office {
   width: 40%;
 }
 
+#info {
+  line-height: 2em;
+}
+
 .contact {
   width: 30%;
+}
+
+.box-space {
+  line-height: .3em;
 }
 
 .box-item h4 {
