@@ -5,6 +5,7 @@ body {
   height: auto;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
+  font-family: 'Archivo Black', sans-serif;
 }
 
 .nasa #img {
@@ -24,7 +25,7 @@ body {
   color: rgb(165, 165, 165, 45%);
   position: absolute;
   font-size: 20vh;
-  padding-left: 40%;
+  padding-left: 37%;
   padding-top: 7%;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: 1px;
@@ -45,6 +46,11 @@ body {
 
 ul li {
   list-style: none;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+li {
+  padding: .5em;
 }
 
 .office {
@@ -61,12 +67,16 @@ ul li {
 
 .box-item p {
   padding: 0 5% 0 15%;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 button {
   background-color: black;
   color: rgb(207, 204, 204);
   border: none;
+  margin-bottom: 5%;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1em;
 }
 
 #box1 {
