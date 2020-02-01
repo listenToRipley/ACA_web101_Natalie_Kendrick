@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  /* width: 100%;
-  height: auto; */
+  width: 100%;
+  height: auto;
   background-color: rgb(255, 255, 255);
 }
 
@@ -12,7 +12,11 @@ body {
   flex-direction: row;
   margin: 1% auto;
   background-color: grey;
+  align-items: center;
+  justify-content: center;
+  width:100%;
 }
+
 
 .nasa {
   background-color: black;
@@ -26,14 +30,18 @@ body {
   background-origin: border-box;
 } 
 
-
 .social {
+  width: 30%;
 }
 
-
+ul li {
+  list-style: none;
+}
 
 .office {
+  width: 40%;
 }
 
 .contact {
+  width: 30%;
 }
