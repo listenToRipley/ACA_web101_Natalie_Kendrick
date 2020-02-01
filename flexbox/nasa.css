@@ -26,22 +26,24 @@ body {
   position: absolute;
   font-size: 20vh;
   padding-left: 37%;
-  padding-top: 7%;
+  padding-top: 4%;
   -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: .5px;
 }
 
 .flexbox {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   margin-top: 2%;
-  background-color: grey;
+  background-color: rgb(177, 177, 177);
   width:100%;
+  clear: both;
 }
 
 .social {
   width: 30%;
+  flex: 1;
 }
 
 ul li {
@@ -55,6 +57,7 @@ li {
 
 .office {
   width: 40%;
+  flex: 1;
 }
 
 #info {
@@ -63,10 +66,7 @@ li {
 
 .contact {
   width: 30%;
-}
-
-.box-space {
-  line-height: .3em;
+  flex: 1;
 }
 
 .box-item h4 {
@@ -78,13 +78,8 @@ li {
   font-family: 'Nanum Myeongjo', serif;
 }
 
-button {
-  background-color: black;
-  color: rgb(207, 204, 204);
-  border: none;
-  margin-bottom: 5%;
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 1em;
+.box-space {
+  line-height: .3em;
 }
 
 #box1 {
@@ -99,4 +94,14 @@ button {
   width: 8em;
   height: 5em;
   background-color: rgb(207, 204, 204) ;
+}
+
+button {
+  background-color: black;
+  color: rgb(207, 204, 204);
+  border: none;
+  padding: .5em .5em .5em .5em;
+  margin-bottom: 8%;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1em;
 }
