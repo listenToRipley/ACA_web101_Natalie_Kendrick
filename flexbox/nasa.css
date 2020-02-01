@@ -31,11 +31,13 @@ body {
 } 
 
 #title {
-  color: grey;
+  color: rgb(165, 165, 165, 45%);
   position: absolute;
   font-size: 20vh;
   padding-left: 40%;
   padding-top: 10%;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
 
 .social {
