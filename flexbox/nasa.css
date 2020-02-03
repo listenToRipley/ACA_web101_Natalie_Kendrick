@@ -42,8 +42,6 @@ body {
 .box-item {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  align-items: space-around;
 }
 
 .social {
@@ -51,6 +49,7 @@ body {
   flex: 1;
   align-content: flex-start;
   flex-wrap: wrap;
+  margin-left: 5%;
 }
 
 ul li {
@@ -67,6 +66,7 @@ li {
   flex: 1;
   align-content: flex-start;
   flex-wrap: wrap;
+  margin-left: 5%;
 }
 
 #info {
@@ -78,7 +78,7 @@ li {
   flex: 1;
   align-content: flex-start;
   flex-wrap: wrap;
-  
+  margin-left: 5%;
 }
 
 
