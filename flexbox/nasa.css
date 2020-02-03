@@ -58,7 +58,7 @@ ul li {
 li {
   padding: .3em;
 }
-
+/* 
 .office {
   width: 40%;
   flex: 1;
@@ -71,7 +71,7 @@ li {
 .contact {
   width: 30%;
   flex: 1;
-}
+} */
 
 
 .box-item h4 {
@@ -81,25 +81,17 @@ li {
 .box-item p {
   padding: 0 5% 0 15%;
   font-family: 'Nanum Myeongjo', serif;
-  padding-left: 15%;
 }
 
-.box-space {
-  line-height: .3em;
-}
 
-#box1 {
+#name {
   border: 1px solid rgb(207, 204, 204);
-  width: 8em;
-  height: 1.5em;
   margin-left: 15%;
   background-color: rgb(207, 204, 204);
 }
 
-#box2 {
+#message{
   border: 1px solid rgb(207, 204, 204);
-  width: 8em;
-  height: 5em;
   margin-left: 15%;
   background-color: rgb(207, 204, 204) ;
 }
