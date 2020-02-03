@@ -34,20 +34,23 @@ body {
 .flexbox {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   margin-top: 2%;
   background-color: rgb(177, 177, 177);
   width:100%;
-  clear: both;
 }
 
 .box-item {
-  margin: 0 10% 0 10%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-around;
 }
 
 .social {
   width: 30%;
   flex: 1;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 ul li {
@@ -58,10 +61,12 @@ ul li {
 li {
   padding: .3em;
 }
-/* 
+
 .office {
   width: 40%;
   flex: 1;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #info {
@@ -71,7 +76,10 @@ li {
 .contact {
   width: 30%;
   flex: 1;
-} */
+  align-content: flex-start;
+  flex-wrap: wrap;
+  
+}
 
 
 .box-item h4 {
@@ -83,6 +91,9 @@ li {
   font-family: 'Nanum Myeongjo', serif;
 }
 
+section {
+  padding-left: 10%;
+}
 
 #name {
   border: 1px solid rgb(207, 204, 204);
@@ -101,8 +112,8 @@ button {
   color: rgb(207, 204, 204);
   border: none;
   padding: .5em .5em .5em .5em;
-  margin-bottom: 8%;
+  margin: 5% 0 8% 15%;
   font-family: 'Archivo Black', sans-serif;
   font-size: 1em;
-  margin-left: 15%;
+
 }
