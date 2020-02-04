@@ -27,10 +27,16 @@ main {
 .imgNav {
   color: #e6eeff;
   padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 #img1 {
-  background-color: #8e9ee2;
+  display: inline-block;
+  position: absolute;
+  color: #e6eeff;
+  background:#8e9ee2;
+  margin: 0 auto;
 }
 
 button {
