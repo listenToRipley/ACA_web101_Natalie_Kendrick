@@ -24,74 +24,75 @@
     </nav>
 
     <!--  ******** Row 1 ********  -->
+  <div class="mainBody"> 
+      <section class="row1 searchBar">
+        <label for="search">Search <input type="text" name="search" id="search">
+        </label>
+      </section>
 
-    <section class="searchBar">
-      <label for="search">Search</label>
-      <input type="text" name="search" id="search">
-    </section>
-
-    <!--  ******** Row 2 ********  -->
-
-    <div class="row1">
-      <div class="boxes" id="totalBalance">
-        <p>Total Balance</p>
-        <h2>$156,523,000</h2>
+      <!--  ******** Row 2 ********  -->
+      
+      <div class="row2">
+        <div class="row2 boxes" id="totalBalance">
+          <p>Total Balance</p>
+          <h2>$156,523,000</h2>
+        </div>
+        <div class="row2 boxes" id="totalIncome">
+          <p>Total Income</p>
+          <h2>$234,246,033</h2>
+        </div>
+        <div class="row2 boxes" id="summary">
+          <p class="sub-tb sub-total">TOTAL BALANCE</p>
+          <p class="sub-te sub-total">TOTAL EARNINGS</p>
+          <p class="sub-tb small-num">$32,523,020</p>
+          <p class="sub-te small-num">$32,532,222</p>
+          <button clickon="totalBalance">TOTAL BALANCE</button>
+        </div>
       </div>
-      <div class="boxes" id="totalIncome">
-        <p>Total Income</p>
-        <h2>$234,246,033</h2>
-      </div>
-      <div class="boxes" id="summary">
-        <p class="sub-tb sub-total">TOTAL BALANCE</p>
-        <p class="sub-te sub-total">TOTAL EARNINGS</p>
-        <p class="sub-tb small-num">$32,523,020</p>
-        <p class="sub-te small-num">$32,532,222</p>
-        <button clickon="totalBalance">TOTAL BALANCE</button>
-      </div>
-    </div>
 
-     <!--  ******** Row 3 ********  -->
+      <!--  ******** Row 3 ********  -->
 
-    <div class="row2">
-      <div class="boxes" id="annualBalance">
-        <p>Annual Balance</p>
-        <h2>12,333,113,000</h2>
+      <div class="row3">
+        <div class="row3 boxes" id="annualBalance">
+          <p>Annual Balance</p>
+          <h2>12,333,113,000</h2>
+        </div>
+        <div class="row3 boxes" id="Annual Total">
+          <p>Annual Total</p>
+          <img src="" alt="visual of Annual Total"> <!-- image placeholder-->
+        </div>
+        <div class="row3 boxes" id="monthlyProfit">
+          <p>April Profit</p>
+          <p>$876,001</p>
+          <button class="row3" clickon="add25">+25%</button>
+          <img src="" alt="monthlySpend"> <!--image placeholder-->
+        </div>
       </div>
-      <div class="boxes" id="Annual Total">
-        <p>Annual Total</p>
-        <img src="" alt="visual of Annual Total"> <!-- image placeholder-->
+      
+      <!--  ******** Row 4 ********  -->
+
+      <div class=" row4 boxes infographic">
+        <p class="row4">Total Income</p>
+        <!--Should I try and do a subgrid here?-->
+        <img class="row4" src="" alt="visualTI"> <!--image placeholder-->
       </div>
-      <div class="boxes" id="monthlyProfit">
-        <p>April Profit</p>
-        <p>$876,001</p>
-        <button clickon="add25">+25%</button>
-        <img src="" alt="monthlySpend"> <!--image placeholder-->
+
+      <!--  ******** Row 5 ********  -->
+
+      <div class="row5 boxes calendar">
+        <p class="row5">Calendar</p>
+        <img class="row5" src="" alt="calendar"> <!--image placeholder-->
       </div>
-    </div>
-     
-     <!--  ******** Row 4 ********  -->
-
-    <div class="boxes infographic">
-      <p>Total Income</p>
-      <!--Should I try and do a subgrid here?-->
-      <img src="" alt="visualTI"> <!--image placeholder-->
-    </div>
-
-    <!--  ******** Row 5 ********  -->
-
-    <div class="boxes calendar">
-      <p>Calendar</p>
-      <img src="" alt="calendar"> <!--image placeholder-->
-    </div>
-    <div class="boxes summary">
-      <img src="" alt="productivity meter"> <!--image placeholder-->
-      <p class="members sum-num">4567</p>
-      <p class="messages sum-num">543</p>
-      <p class="incoming sum-num">5324</p>
-      <p class="members sum-titles">MEMBERS</p>
-      <p class="messages sum-titles">MESSAGES</p>
-      <p class="incoming sum-titles">INCOMING</p>
-    </div>
+      <div class=" row5 boxes summary">
+        <img class="row5" src="" alt="productivity meter"> <!--image placeholder-->
+        <p class="row5 members sum-num">4567</p>
+        <p class="row5 messages sum-num">543</p>
+        <p class="row5 incoming sum-num">5324</p>
+        <p class="row5 members sum-titles">MEMBERS</p>
+        <p class="row5 messages sum-titles">MESSAGES</p>
+        <p class="row5 incoming sum-titles">INCOMING</p>
+      </div>
+    </div> 
   </main>
 </body>
 </html>
