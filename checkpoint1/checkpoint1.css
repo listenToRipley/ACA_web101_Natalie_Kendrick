@@ -21,7 +21,8 @@ body {
 main {
   display: grid;
   grid-template-columns: 10% repeat(3, 30%);
-  grid-template-rows: 10% repeat(4, 18%) ;
+  grid-template-rows: 10% repeat(4, 18%);
+  grid-gap: 2em;
 }
 
 .imgNav {
@@ -53,6 +54,11 @@ main {
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
+  margin: 1em 0 1em 1em;
+}
+
+.boxes {
+  background-color: #1e1750 ;
 }
 
 button {
