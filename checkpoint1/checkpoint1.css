@@ -20,17 +20,15 @@ body {
 
 .mainBody {
     display: grid;
-    grid-gap: 2em;
-    grid-template-rows: 8% repeat(4, 23%);
-    grid-template-columns: 5% repeat(3, 33.333%);
-    grid-gap: 2em;
+    grid-template-rows: 8% 98%;
+    grid-template-columns: 5% 98%;
 }
 
 .imgNav {
   color: #e6eeff;
   background-color: #1e0753;
   grid-column: 1;
-  grid-row: 1 / 8;
+  grid-row: 1 / 2;
 }
 
 .icon {
@@ -57,6 +55,20 @@ need to git a box around this
   position: relative;
 }
 
+.row1 {
+  grid-row: 1 / 2;
+  grid-column: 2;
+}
+
+/* the main content of the dashboard */
+
+.bigBox {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: 20% 20% 30% 30%;
+  grid-gap: 2em;
+}
+
 .boxes {
   background-color: #1e1750;
   display: flex;
@@ -72,33 +84,28 @@ div h2 {
 }
 
 
-.row1 {
-  grid-row: 1 / 2;
-  grid-column: 2 / 5;
-}
-
 .row2 {
-  grid-row: 2 / 3;
+  grid-row: 1;
   /* grid-column: 2 / 5; */
   display: flex;
 }
 
 #totalBalance {
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
 }
 
 
 #totalIncome  {
-  grid-column: 3 / 4;
+  grid-column: 2 / 3;
 }
 
 #summary {
-  grid-columns: 4 / 5;
+  grid-columns: 3 / 4;
 }
 
 
 .row3 {
-  grid-row: 3 / 4;
+  grid-row: 2;
   grid-column: 2 / 5;
 }
 
