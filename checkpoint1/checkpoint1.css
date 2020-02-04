@@ -17,3 +17,26 @@ body {
   color: #e6eeff;
   font-family: 'Raleway', sans-serif;
 }
+
+main {
+  display: grid;
+  grid-template-columns: 10% repeat(3, 30%);
+  grid-template-rows: 10% repeat(4, 18%) ;
+}
+
+.imgNav {
+  color: #e6eeff;
+  padding: 15px;
+}
+
+#img1 {
+  background-color: #8e9ee2;
+}
+
+button {
+  background-color: #8e9ee2;
+  color: #e6eeff;
+  border: none;
+  padding: .5em;
+  border-radius: 15% auto;
+}
