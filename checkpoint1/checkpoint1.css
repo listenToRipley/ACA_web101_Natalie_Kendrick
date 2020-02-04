@@ -72,7 +72,7 @@ need to git a box around this
 
 .boxes {
   background-color: #1e1750;
-  /* display: flex; */
+  display: flex;
 }
 
 button {
@@ -95,6 +95,11 @@ button {
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 5;
+  display: flex;
+}
+
+#totalBalance #totalIncome #summary #annualBalance #annualTotal #monthlyProfit .infographic .calendar .summary {
+  flex-direction: column;
 }
 
 .row3 {
@@ -116,4 +121,10 @@ button {
   grid-row-end: 6;
   grid-column-start: 2;
   grid-column-end: 5;
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 33.333%);
+  grid-template-rows: 1fr 1fr;
 }
