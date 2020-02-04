@@ -30,6 +30,11 @@ main {
   padding: 8px;
   display: grid;
   flex-direction: column;
+  background-color: #1e0753;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 8;
 }
 
 div p {
@@ -98,9 +103,6 @@ button {
   display: flex;
 }
 
-#totalBalance #totalIncome #summary #annualBalance #annualTotal #monthlyProfit .infographic .calendar .summary {
-  flex-direction: column;
-}
 
 .row3 {
   grid-row-start: 3;
