@@ -143,7 +143,21 @@ div h2 {
   flex-direction: column;
 }
 
+.sum-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2%;
+  margin-left: 15%;
+}
 
+.sum-num {
+  grid-row: 1/2;
+}
+
+.sum-titles {
+  grid-row: 2/3;
+}
 
 button {
   background-color: #8e9ee2;
@@ -168,6 +182,7 @@ button {
 .charts {
   font-size: 2em;
   color: whitesmoke;
+  margin-left: 10%;
 }
 
 #tiChart {
