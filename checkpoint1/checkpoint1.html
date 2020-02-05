@@ -33,7 +33,7 @@
         <!--  ******** Row 2 ********  -->
       
       <section class="row2 boxes">
-          <div class="row2  column2 boxes" id="totalBalance">
+          <div class="row2 column2 boxes" id="totalBalance">
             <p>Total Balance</p>
             <h2>$156,523,000</h2>
           </div>
@@ -41,7 +41,7 @@
             <p>Total Income</p>
             <h2>$234,246,033</h2>
           </div>
-          <div class="row2 column4 boxes" id="summary">
+          <div class="row2 direction column4 boxes" id="summary">
             <p class="sub-tb sub-total">TOTAL BALANCE</p>
             <p class="sub-te sub-total">TOTAL EARNINGS</p>
             <p class="sub-tb small-num">$32,523,020</p>
@@ -59,13 +59,13 @@
           </div>
           <div class="row3 column3 boxes" id="annualTotal">
             <p>Annual Total</p>
-            <img id="vAnnual" src="" alt="visual of Annual Total"> <!-- image placeholder-->
+            <a id="tiChart" href=""><i class="far fa-chart-bar"></i></a>
           </div>
           <div class="row3 column4 boxes" id="monthlyProfit">
             <p>April Profit</p>
             <p>$876,001</p>
             <button class="row3" clickon="add25">+25%</button>
-            <img src="" alt="monthlySpend"> <!--image placeholder-->
+            <a class="charts" id="aprilChart" href=""><i class="fas fa-chart-area"></i></a>
           </div>
         </section>
         
@@ -74,17 +74,22 @@
         <section class=" row4 columnAll boxes infographic">
           <p class="row4">Total Income</p>
           <!--Should I try and do a subgrid here?-->
-          <img class="row4" src="" alt="visualTI"> <!--image placeholder-->
+          <img class="row4" id="chartImg" src="../img/cp1chart.png" alt="visualTI"> <!--image placeholder-->
         </section>
 
         <!--  ******** Row 5 ********  -->
         <section class="row5">
           <div class="row5 column2 boxes calendar">
             <p class="row5">Calendar</p>
-            <img class="row5" src="" alt="calendar"> <!--image placeholder-->
+            <a id="calendarImg" href=""><i class="far fa-calendar-alt"></i></a>
           </div>
           <div class=" row5 column3-4 boxes" id="net">
-            <img class="row5" src="" alt="productivity meter"> <!--image placeholder-->
+            <div class="charts">
+              <a class="charts chart1" href=""><i class="fas fa-chart-pie"></i></a>
+              <a class="charts chart1" href=""><i class="fas fa-chart-pie"></i></a>
+              <a class="charts chart1" href=""><i class="fas fa-chart-pie"></i></a>
+              <a class="charts chart1" href=""><i class="fas fa-chart-pie"></i></a>
+            </div>
             <p class="row5 members sum-num">4567</p>
             <p class="row5 messages sum-num">543</p>
             <p class="row5 incoming sum-num">5324</p>
