@@ -57,14 +57,16 @@ body {
   align-content: center;
   padding-left: 2%;
   font-size: 15px;
+  padding-top: 2%;
 }
 
 /* the main content of the dashboard */
 
 .boxes {
-  background-color: #1e1750;
   flex-direction: column;
   grid-gap: 2em;
+  margin-top: 2%;
+  padding-left: 2%;
 }
 
 div p {
@@ -85,15 +87,18 @@ div h2 {
 
 #totalBalance {
   flex-direction: column;
+  background-color: #1e1750;
 }
  
 #totalIncome {
   flex-direction: column;
+  background-color: #1e1750;
 }
 
 #summary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-color: #8376e0;
 } 
 
 .row3 {
@@ -106,20 +111,24 @@ div h2 {
 
 #annualBalance {
   flex-direction: column;
+  background-color: #1e1750;
 }
 
 #annualTotal {
   flex-direction: column;
+  background-color: #1e1750;
 }
 
 #monthlyProfit {
   flex-direction: column;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: #1e1750;
 }
 
 .row4 {
   grid-row: 4 / 5;
+  background-color: #1e1750;
 }
 
 #row4text {
@@ -137,10 +146,12 @@ div h2 {
 
 .calendar {
   flex-direction: column;
+  background-color: #1e1750;
 }
 
 #net {
   flex-direction: column;
+  background-color: #1e1750;
 }
 
 .sum-grid {
