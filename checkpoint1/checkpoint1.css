@@ -122,9 +122,27 @@ div h2 {
   grid-row: 4 / 5;
 }
 
+#row4text {
+  padding: 2%;
+}
+
 .row5 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-row: 3;
   grid-row: 5 / 6;
 }
+
+.calendar {
+  flex-direction: column;
+}
+
+#net {
+  flex-direction: column;
+}
+
 
 
 button {
@@ -143,7 +161,8 @@ button {
 #chartImg {
   height: 85%;
   position: auto;
-  align-content: center;
+  padding-left: 3%;
+
 }
 
 .charts {
