@@ -21,7 +21,7 @@ body {
 .mainBody {
     display: grid;
     grid-template-rows: 7% 15% 15% 24% 24%;
-    grid-template-columns: 5% repeat(3, 33.333%);
+    grid-template-columns: 5% 95%;
     grid-gap: 15px;
   }
 
@@ -53,6 +53,7 @@ need to git a box around this
   height: 100%;
   background-color: #1e0753;
   position: relative;
+  margin: 0 auto;
 }
 
 .searchBar {

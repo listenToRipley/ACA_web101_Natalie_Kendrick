@@ -25,73 +25,74 @@
 
       <!--  ******** Row 1 ********  -->
       
-        <section class="row1 searchBar">
+      <section class="row1 searchBar">
           <label for="search">Search <input type="text" name="search" id="search">
           </label>
-        </section>
+      </section>
 
         <!--  ******** Row 2 ********  -->
-        > 
-        <div class="row2 boxes">
+      
+      <section class="row2 column2 boxes">
           <div class="row2 boxes" id="totalBalance">
             <p>Total Balance</p>
             <h2>$156,523,000</h2>
           </div>
-          <div class="row2 boxes" id="totalIncome">
+          <div class="row2 column3 boxes" id="totalIncome">
             <p>Total Income</p>
             <h2>$234,246,033</h2>
           </div>
-          <div class="row2 boxes" id="summary">
+          <div class="row2 column4 boxes" id="summary">
             <p class="sub-tb sub-total">TOTAL BALANCE</p>
             <p class="sub-te sub-total">TOTAL EARNINGS</p>
             <p class="sub-tb small-num">$32,523,020</p>
             <p class="sub-te small-num">$32,532,222</p>
             <button clickon="totalBalance">TOTAL BALANCE</button>
           </div>
-        </div>
+        </section>
 
         <!--  ******** Row 3 ********  -->
 
-        <div class="row3">
-          <div class="row3 boxes" id="annualBalance">
+        <section class="row3">
+          <div class="row3 column2 boxes" id="annualBalance">
             <p>Annual Balance</p>
             <h2>12,333,113,000</h2>
           </div>
-          <div class="row3 boxes" id="annualTotal">
+          <div class="row3 column3 boxes" id="annualTotal">
             <p>Annual Total</p>
             <img id="vAnnual" src="" alt="visual of Annual Total"> <!-- image placeholder-->
           </div>
-          <div class="row3 boxes" id="monthlyProfit">
+          <div class="row3 column4 boxes" id="monthlyProfit">
             <p>April Profit</p>
             <p>$876,001</p>
             <button class="row3" clickon="add25">+25%</button>
             <img src="" alt="monthlySpend"> <!--image placeholder-->
           </div>
-        </div>
+        </section>
         
         <!--  ******** Row 4 ********  -->
 
-        <div class=" row4 boxes infographic">
+        <section class=" row4 columnAll boxes infographic">
           <p class="row4">Total Income</p>
           <!--Should I try and do a subgrid here?-->
           <img class="row4" src="" alt="visualTI"> <!--image placeholder-->
-        </div>
+        </section>
 
         <!--  ******** Row 5 ********  -->
-
-        <div class="row5 boxes calendar">
-          <p class="row5">Calendar</p>
-          <img class="row5" src="" alt="calendar"> <!--image placeholder-->
-        </div>
-        <div class=" row5 boxes" id="net">
-          <img class="row5" src="" alt="productivity meter"> <!--image placeholder-->
-          <p class="row5 members sum-num">4567</p>
-          <p class="row5 messages sum-num">543</p>
-          <p class="row5 incoming sum-num">5324</p>
-          <p class="row5 members sum-titles">MEMBERS</p>
-          <p class="row5 messages sum-titles">MESSAGES</p>
-          <p class="row5 incoming sum-titles">INCOMING</p>
+        <section class="row5">
+          <div class="row5 column2 boxes calendar">
+            <p class="row5">Calendar</p>
+            <img class="row5" src="" alt="calendar"> <!--image placeholder-->
+          </div>
+          <div class=" row5 column3-4 boxes" id="net">
+            <img class="row5" src="" alt="productivity meter"> <!--image placeholder-->
+            <p class="row5 members sum-num">4567</p>
+            <p class="row5 messages sum-num">543</p>
+            <p class="row5 incoming sum-num">5324</p>
+            <p class="row5 members sum-titles">MEMBERS</p>
+            <p class="row5 messages sum-titles">MESSAGES</p>
+            <p class="row5 incoming sum-titles">INCOMING</p>
         </div> 
+      </section>
     </div>
   </main>
 </body>
