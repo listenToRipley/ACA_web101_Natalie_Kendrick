@@ -1,0 +1,114 @@
+.main-container {
+    border: 2px solid magenta;
+    height: 100%;
+    width: 100%;
+    background-color:#5e798f;
+    float: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 10%;    
+}
+
+/* This is a new branch? Wasn't in a brach*/
+
+#footer {
+    top: 90%;
+    width: 97.3%;
+    background-color: #f7b130;
+    position: fixed;
+    align-content: flex-end;
+    left: 1.8%;
+    right: -1.5%;
+    bottom: .5%;
+    margin-bottom: 0;
+}
+
+#socialMedia {
+    display: grid;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    grid-auto-rows: 20px 20px 25px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#socialMedia p:nth-child(3){
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+/* Moved the footer up to try to help with the spacing issue I was having */
+
+.header{
+    font-size: 15px;
+    color: #f7b130;
+    background-color: #182063;
+    text-align: end;
+    padding: 2px 0 2px 0;
+}
+
+.header a {
+    margin-right: 20px;
+}
+
+/*Feel like I would need to start from stretch to get the formatting right and ran out of time to do it, Will do better next time*/
+
+#bar { 
+    background-color: #f7b130;
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    justify-content: center;
+    text-align: end;
+    
+}
+
+#bar #iconTop {
+    height: 23px;
+    width: 23px;
+    margin-right: 15%;
+    margin-top: 5px;
+}
+
+#bar a {
+    color: #0c2ef1 ; 
+    text-align: right center;
+    padding: 8px 8px 8px 8px;
+}
+
+#bar a:nth-child(6) {
+    padding-right: 5px;
+}
+
+#bar a:nth-child(7){
+    color: #f7b130;
+    background-color: #4572b1;   
+    margin: 0 10px 0 10px;  
+}
+
+.align {
+    color: #182063;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #a37607;
+    background-color: #4572b1;
+    margin: 5% 17% 5% 17%;  /* space on the sides you need*/
+    justify-content: space-evenly;
+    font-family: inherit;
+    padding-bottom: 10px;
+}
+
+.group{
+    padding: 2% 0 5% 5%;
+}
+
+.group .title{
+    margin-top: auto;
+}
+
+.group .content{
+    border-bottom: 2px solid #8cb9dd;
+    padding-bottom: 2%;
+    margin-bottom: 1%;
+    text-align: justify;
+}
+

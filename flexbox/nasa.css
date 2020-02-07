@@ -1,121 +1,16 @@
 body {
-  margin: 0;
-  padding: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
-  box-sizing: border-box;
   background-color: rgb(255, 255, 255);
-  font-family: 'Archivo Black', sans-serif;
 }
 
-.nasa #img {
-  background-color: black;
-  background-image: url(nasa.jpg);
-  background-size: cover;
+body:nth-child(1){
+  background-image: url(nasaImage.jpg);
+  background-size: 50% 50% 50% 50%;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 90%;
-  resize: both;
-  margin: 50px;
-  padding: 0 auto;
-  margin: 0 auto;
-} 
-
-#title {
-  color: rgb(165, 165, 165, 45%);
-  position: absolute;
-  font-size: 12vw;
-  padding-left: 37%;
-  padding-top: 10%;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: .5px;
 }
 
 .flexbox {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 2%;
-  background-color: rgb(177, 177, 177);
-  width:100%;
-}
-
-.box-item {
-  display: flex;
   flex-direction: column;
-}
-
-.social {
-  width: 30%;
-  flex: 1;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 5%;
-}
-
-ul li {
-  list-style: none;
-  font-family: 'Nanum Myeongjo', serif;
-}
-
-li {
-  padding: .3em;
-}
-
-/* I know I am having issues with getting this to wrap */
-
-.office {
-  width: 40%;
-  flex: 1;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 5%;
-}
-
-#info {
-  line-height: 2em;
-}
-
-.contact {
-  width: 30%;
-  flex: 1;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 5%;
-}
-
-
-.box-item h4 {
-  padding-left: 15%;
-}
-
-.box-item p {
-  padding: 0 5% 0 15%;
-  font-family: 'Nanum Myeongjo', serif;
-}
-
-section {
-  padding-left: 10%;
-}
-
-#name {
-  border: 1px solid rgb(207, 204, 204);
-  margin-left: 15%;
-  background-color: rgb(207, 204, 204);
-}
-
-#message{
-  border: 1px solid rgb(207, 204, 204);
-  margin-left: 15%;
-  background-color: rgb(207, 204, 204) ;
-}
-
-button {
-  background-color: black;
-  color: rgb(207, 204, 204);
-  border: none;
-  padding: .5em .5em .5em .5em;
-  margin: 5% 0 8% 15%;
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 1em;
-
 }
