@@ -61,6 +61,8 @@ li {
   padding: .3em;
 }
 
+/* I know I am having issues with getting this to wrap */
+
 .office {
   width: 40%;
   flex: 1;
