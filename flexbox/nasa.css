@@ -24,9 +24,9 @@ body {
 #title {
   color: rgb(165, 165, 165, 45%);
   position: absolute;
-  font-size: 10vw;
+  font-size: 12vw;
   padding-left: 37%;
-  padding-top: 2%;
+  padding-top: 10%;
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: .5px;
 }
