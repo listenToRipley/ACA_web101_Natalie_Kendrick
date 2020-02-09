@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%; 
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #AFEEEE;
+}
+
+
+nav > a {
+  align-content: space-between;
+  float: right;
+}
+
+a:link {
+  margin: 10px auto;
+  color:#1E90FF;
+    font-size: 20px;
+}
+
+a:hover {
+  background-color: #5F9EA0;
+  padding: 1em;
+}
+
+a:visited {
+  color:#DAA520;
+}
+
+.logo {
+  max-width: 5em;
+  max-height: 5em;
+  align-self: flex-start;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(background.jpeg);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.has-border {
+  border-radius: 25px;
+  border: 2px solid darkblue;
+  background: none;
+  padding: 15px 20px 20px 20px;
+  margin: 20px;
+}
+
+#profile-pic {
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  margin-top: 5%;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+h1 {
+  color:white;
+  margin: 5% auto;
+  padding: auto;
+  border-bottom: 2px solid skyblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: seashell;
+}
+
+h2 {
+  margin: 7% auto;
+  font-style: italic;
+  font-size: 25px;
+  color: #1E90FF;
+}
+
+button {
+  width: 8em;
+  height: 2em;
+  margin: auto;
+  font-style: italic;
+  color: white;
+  font-size: 25px;
+  border-radius: 50px;
+  border: 2px solid #1E90FF; 
+  background: transparent;
+}
+
+.small-text {
+  color: white;
+  font-size: 1px;
+  margin: 3% auto;
+  padding-top: 25px;
+}
+
+/* #colorfulCircles{
+  position: absolute;
+  margin: auto;
+  top: 25%; bottom: 0;
+} */
+
+/* .circle1 {
+  display: inline-block;
+  background: turquoise;
+  opacity: 0.5;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 0;
+  padding: 30%;
+}
+
+.circle2 {
+  display: block;
+  background: steelblue;
+  opacity: 0.5;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin: 20px;
+  padding: 20%;
+}
+
+.circle3 {
+  display: block;
+  background: salmon;
+  opacity: 0.9;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 1px;
+  padding: 15px;  
+}
+
+.circle4 {
+  display: block;
+  background: gold;
+  opacity: 0.8;
+  border-radius: 50%;
+  height: 65px;
+  width: 65px;
+  margin: 10px;
+  padding: 15px;  
+} */
