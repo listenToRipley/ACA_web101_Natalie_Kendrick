@@ -3,33 +3,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../../reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Nanum+Myeongjo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="nasa.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="nasa">
-    <h1>
-    NASA
-    </h1>
-  </div>
-  <main class="flexbox">
-    <div class="social">
-      <h4>Social</h4>
+  <main>
+    <div class="nasa">
+      <h4 id="title">NASA</h4>
+      <div id="img"></div>
     </div>
-    <div class="office">
-      <h4>Office Information</h4>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis itaque esse deserunt! Consectetur ipsam fuga sunt porro adipisci molestiae eum, eaque placeat maiores, repudiandae, quibusdam veritatis incidunt animi expedita quidem?</p>
-    </div>
-    <div class="contact">
-      <h4>Contact us</h4>
-      <p>Name</p>
-      <p class="box" id="nameBox"></p>
-      <p>Message</p>
-      <p class="box" id="messageBx"></p>
-      <button onclick="">send</button>
+    <div class="flexbox">
+      <div class="social box-item">
+        <h4>Social</h4>
+        <ul>
+          <li>Twitter - @nasa</li>
+          <li>FaceBook - fb.com/nasa</li>
+          <li>Instagram - @nasa</li>
+          <li>Youtube - youtube.com/NASA</li>
+        </ul>
+      </div>
+      <div class="office box-item">
+        <h4>Office Information</h4>
+        <p id="info">Public Communications Office <br> NASA Headerquarter <br> 300 E. Street SW, Suite 5R30 <br> Washington, DC 20546 <br> (202)358-0001 (Office) <br> (202)358-4338 (Fax)</p>
+      </div>
+      <div class="contact box-item">
+        <h4>Contact Us</h4>
+        <section>
+          <label for="contact">
+            <p>Name</p> <br>
+            <input type="text" name="name" id="name">
+          </label>
+          <label for="message">
+            <br>
+            <p>Message</p> <br>
+            <textarea name="message" id="message" cols="20" rows="8"></textarea>
+          </label>
+          <br>
+          <button onclick="">send</button> 
+        </section>
+      </div>
     </div>
   </main>
-  
 </body>
 </html>
