@@ -16,13 +16,14 @@ body {
   background:#483D8B;
   color: #e6eeff;
   font-family: 'Raleway', sans-serif;
+  flex-wrap: wrap;
 }
 
 .mainBody {
     display: grid;
     grid-template-rows: 7% 17% 15% 24% 22%;
     grid-template-columns: 5% 95%;
-    /* grid-gap: 15px; */
+    grid-gap: 12px;
   }
 
 .imgNav {
@@ -30,6 +31,7 @@ body {
   background-color: #1e0753;
   grid-column: 1 ;
   grid-row: 1 / 7;
+  width: 3em;
 }
 
 .icon {
@@ -40,8 +42,6 @@ body {
   margin-left: 35%;  
 } 
 /* will need to update size of icons for media */
-
-
 
 .row1 {
   grid-row: 1 / 2;
@@ -210,7 +210,6 @@ div h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  grid-row: 3 /4;
   grid-row: 5 / 6;
   padding-bottom: 20px;
 }
@@ -250,19 +249,25 @@ div h2 {
 
 /* buttons */
 
-.button {
-  background-color: #8e9ee2;
-  color: #e6eeff;
-  border: none;
-  font-size: .7em;
-  justify-content: center;
-  border-radius: 20%;
+button {
+background-color: #8e9ee2;
+color:#e6eeff;
+border: none;
+justify-content: center;
+border-radius: 10px;
+margin-bottom: 1px;
+width: 45%;
+justify-content: center;
 }
 
 .button-tb {
   width: 60%;
   justify-content: center;
   margin-bottom: 3px;
+}
+
+.button-tb-short {
+  display: none;
 }
 
 .add25 {
@@ -305,4 +310,56 @@ div h2 {
   color: whitesmoke;
   padding: 5%;
   font-size: 25vw;
+}
+
+@media (max-width: 674px)
+
+{
+  .row4 {
+    display: none;
+  }
+
+  .boxes {
+    height: 4em;
+  }
+
+  .button-tb {
+    display: none;
+  }
+  
+  .button-tb-short {
+    display: inline;
+    justify-content: center;
+    width: 50px;
+  }
+
+  .fa-chart-bar {
+    font-size: 2em;
+  }
+
+  div h2 {
+    font-size: 1em;
+  }
+
+  #calendarImg {
+  font-size: 2em;
+}
+
+  .calendar {
+    height: 4em;
+    width: auto;
+  }
+
+  .fa-chart-area {
+    font-size: 1em;
+}
+  .fa-chart-pie {
+  display: none;
+}
+
+.column3-4 {
+  display: flex;
+  height: 4em;
+}
+
 }
