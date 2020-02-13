@@ -1,21 +1,23 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   width: 100%;
   height: 100%; 
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
   background-color: #AFEEEE;
 }
 
 
 nav > a {
+  display: flex;
+  justify-content: space-evenly;
   align-content: space-between;
-  float: right;
 }
 
 a:link {
@@ -43,9 +45,8 @@ a:visited {
 main {
   display: flex;
   flex-direction: column;
-  background-image: url(background.jpeg);
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-image: url(./src/img/movingboxes.gif);
+  background-repeat: repeat;
 }
 
 .has-border {
