@@ -5,6 +5,7 @@ body {
   height: 100%; 
   margin: 0;
   padding: 0;
+  color: rgb(5, 108, 121);
 }
 
 header {
@@ -12,8 +13,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: black;
-  width: 15vw;
-  height: 100vh;
+  width: 5em;
   padding: 15px;
   font-family: 'Lexend Deca', sans-serif;
 }
@@ -21,8 +21,8 @@ header {
 
 nav > a {
   display: flex;
-  justify-content: space-evenly;
-  align-content: space-between;
+  padding: 20px;
+  justify-content: center;
   
 }
 
@@ -33,7 +33,7 @@ a:link {
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   background-color: white;
   padding: 1em;
   border: 1px solid goldenrod;
@@ -44,10 +44,11 @@ a:visited {
 }
 
 .logo {
-  max-width: 5em;
+  max-width: 4em;
   max-height: 5em;
   align-self: flex-start;
   justify-content: center;
+  padding: 2px;
 }
 
 
@@ -59,18 +60,15 @@ main {
   background-size: 100vh;
 }
 
-.has-border {
-  border-radius: 25px;
-  border: 2px solid darkblue;
-  background: none;
-  padding: 15px 20px 20px 20px;
-  margin: 20px;
-}
 
 #profile-pic{
   width: 40%;
   border-radius: 50%;
-  margin-left: 25%;
+  margin-left: 24%;
+}
+
+.text {
+  margin-left: 15%;
 }
 
 .name {
@@ -81,16 +79,66 @@ main {
   font-family: 'Monoton', cursive;
   font-size: 35px;
   color: goldenrod;
+  background-color:rgba(5, 108, 121, 0.432);
 }
 
 h2 {
   margin: 3%;
   font-size: 25px;
-  color: #1E90FF;
+  background-color: rgba(218, 165, 32, 0.527);
+  -webkit-text-stroke: 1px black;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.video  {
+  padding-left: 30vw;
+  position: absolute;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.webpgEx {
+  transition: transform .2s;
+  width: 200px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.webpgEx:hover {
+  transform: scale(1.5);
+}
+
+.dash {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.nasa {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+a img {
+  width: 200px;
+  padding: 0;
 }
 
 footer{
 background-color: black;
 text-orientation: mixed;
 writing-mode: vertical-rl;
+width: 3em;
+padding: 5px 10px;
+display: flex;
 }
