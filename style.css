@@ -85,7 +85,8 @@ main {
 h2 {
   margin: 3%;
   font-size: 25px;
-  background-color: rgba(218, 165, 32, 0.527);
+  color: goldenrod;
+  background-color:rgba(5, 108, 121, 0.432);
   -webkit-text-stroke: 1px black;
 }
 
