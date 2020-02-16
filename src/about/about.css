@@ -4,7 +4,8 @@ body {
   height: 100%; 
   margin: 0;
   padding: 0;
-  background-color: black;
+  /* background-color: black;
+  color: white; */
 }
 
 header {
@@ -14,6 +15,7 @@ header {
   background-color: black;
   width: 5em;
   padding: 15px;
+  height: 100%;
 }
 
 
@@ -52,33 +54,27 @@ a:visited {
 main {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  background-color: rgb(241, 209, 170);
 }
 
-.content-box {
-  padding: 15px;
-  margin: 5px;
-}
 
-.background {
+/* .keyboard img {
+  margin: 0;
+  width: 90%;
+  position: absolute;
+  align-items: flex-end;
+  background-color: black;
+} */
+
+.footer{
+  height: 100%;
+  background-color: black;
+  text-orientation: mixed;
+  writing-mode: vertical-rl;
+  width: 3em;
+  padding: 5px 10px;
   display: flex;
-  flex-direction: column;
-  background-image: url(../img/SaguaroDesert.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-
-.now {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/downtown.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-}
-
-.hobbies {
-  display: flex;
-  flex-direction: column;
-  background-image: url(../img/doubleGruff.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw; 
-}
+  }
