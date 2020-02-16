@@ -5,6 +5,9 @@ body {
   padding: 0;
   color: rgb(5, 108, 121);
   background-color: #f1d1aa;
+  background-image: url(../img/stamps.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
@@ -13,7 +16,6 @@ header {
   align-items: center;
   background-color: black;
   width: 5em;
-  height: 100vh;
   padding: 15px;
   font-family: 'Lexend Deca', sans-serif;
 }
@@ -58,14 +60,13 @@ main {
   margin: 20px;
 }
 
-/* form {
-  display: flex;
-  flex-direction: column;
-} */
 
-
-legend {
+h1, legend {
   font-family: 'Nixie One', cursive;
+}
+
+address {
+  margin: 5px;
 }
 
 form {
