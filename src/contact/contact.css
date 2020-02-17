@@ -8,6 +8,7 @@ body {
   background-image: url(../img/stamps.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  color:  goldenrod;
 }
 
 header {
@@ -72,6 +73,7 @@ address {
 form {
   font-size: 15px;
   font-family: 'Arsenal', sans-serif;
+  background-color: rgba(0, 139, 139, 0.363);
 }
 
 input {
@@ -79,12 +81,22 @@ input {
   flex-direction: column;
   margin: 20px;
   box-shadow: 1px 1px 1px goldenrod;
-  background-color: transparent;
+  background-color: rgba(0, 139, 139, 0.699);
+  color: rgb(22, 14, 65); 
+  font-weight: bolder;
+  font-kerning: 1px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+
 }
 
 textarea {
   box-shadow: 1px 1px 1px goldenrod;
-  background-color: transparent;
+  background-color: rgba(0, 139, 139, 0.699);
+  margin: 10px;
 }
 
 footer{
