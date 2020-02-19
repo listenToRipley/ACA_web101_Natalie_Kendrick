@@ -22,8 +22,9 @@ header {
 nav > a {
   display: flex;
   padding: 20px;
-  justify-content: center;
-  
+  margin: 10px;
+  justify-content: space-around;
+  align-self: center; 
 }
 
 a:link {
@@ -33,14 +34,31 @@ a:link {
   text-decoration: none;
 }
 
-nav a:hover {
+a span {
+  display: none;
+  font: 15px;
+}
+
+
+nav a span:hover  {
   background-color: white;
   padding: 1em;
   border: 1px solid goldenrod;
+  width: 50px;
+}
+
+nav:hover span{
+  display: block;
+  font-size: 10px;
+  color:red;
 }
 
 a:visited {
   color:goldenrod;
+}
+
+.fa-memory {
+  writing-mode: sideways-lr;
 }
 
 .logo {
@@ -73,18 +91,121 @@ main {
   margin-left: 15%;
 }
 
-.name {
-  color:white;
+/* used code pen https://codepen.io/minonoflight/pen/wvaWYbP */
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+
+.animate span:nth-of-type(15) {
+	animation-delay: .6s;
+}
+
+.animate span:nth-of-type(16) {
+	animation-delay: .65s;
+}
+
+.animate span:nth-of-type(17) {
+	animation-delay: .7s;
+}
+
+.animate span:nth-of-type(18) {
+	animation-delay: .66s;
+}
+
+.animate span:nth-of-type(19) {
+	animation-delay: .8s;
+}
+
+.animate span:nth-of-type(20) {
+	animation-delay: .67s;
+}
+
+.animate span:nth-of-type(21) {
+	animation-delay: .9s;
+}
+
+.animate span:nth-of-type(22) {
+	animation-delay: .68s;
+}
+
+
+.animate span {
+  display: inline-block;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+	60% {
+		transform: translate(20px, 0) scale(1);
+		color: white;
+	}
+
+	80% {
+		transform: translate(20px, 0) scale(1);
+		color: white;
+	}
+
+	99% {
+		transform: translate(0) scale(1.2);
+		color:goldenrod;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: white;
+	}
+}
+
+#name {
   margin: 5% auto;
   padding: auto;
   border-bottom: 2px solid skyblue;
   font-family: 'Monoton', cursive;
   font-size: 35px;
-  color: goldenrod;
   background-color:rgba(5, 108, 121, 0.432);
 }
 
-h2 {
+#currentTitle {
   margin: 3%;
   font-size: 25px;
   color: goldenrod;
