@@ -19,7 +19,7 @@ span {
 }
 
 span:nth-child(odd):hover {
-  transform: scale(2 , 2) translateX(150px) rotate(180deg);
+  transform: scale(2 , 2) translateX(15vw) rotate(180deg);
 }
 
 span:nth-child(odd) {
@@ -27,11 +27,11 @@ span:nth-child(odd) {
 }
 
 span:nth-child(even):hover {
-  transform: scale(0.5 , 0.5) translateX(-300px) rotate(-1800deg);
+  transform: scale(0.5 , 0.5) translateX(-80vw) rotate(-180deg);
 }
 
 span:nth-child(even) {
-  transition: all 7s ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 span:nth-child(1) {
