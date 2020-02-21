@@ -1,0 +1,145 @@
+body {
+    background-color: cornsilk;
+    /* grid didn't quite work
+    display: grid;
+    grid-template: 40% 15% 20% 25% /70% 30%;
+    grid-template-areas: 
+    "image" "sidebar"
+    "header" "header"
+    "text" "text"
+    "footer" "footer"; */
+}
+
+img {
+    /* grid-area: image;  */
+    width: 60%;
+    height: 30%;
+    padding: 3% auto;
+    }
+
+    #image-sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+        margin: 5% auto;
+        font-size: initial;
+    }
+ul {
+        font-size: 15px;
+    }
+
+/* moved #sidebar from here */
+
+    #button {
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 5%;
+    }
+
+    #button:hover {
+        background-color: darkslateblue;
+        font-weight: bold;
+        border-radius: 25px auto;
+    }
+
+    footer {
+        background-color: grey;
+        display: flex;
+        justify-content: space-evenly;
+        }
+
+    .footer li{
+        list-style: none;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* .icon {
+        width: 50px;
+        height: 50px;
+    } */
+
+
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+    #sidebar {
+        display: none;
+    }
+    #button {
+        display: none;
+    }
+    #lowerbar {
+        height: 10%;
+    }
+
+    
+  /* couldn't get the row to wrap */
+
+    .footer ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    /* .footer #social {
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    } */
+
+
+    /* footer {
+        display: none;
+    } didn't work*/
+}
+
+    /* .footer {
+        height: 40%;
+
+/* Large and up (Desktops) */
+
+
+
+/* body {
+    background-color: black ;
+}
+.contain {
+    height: 100%;
+    width: 100%;
+    border: 1px solid orange;
+}
+
+li {
+    border: 1px solid orange;
+    list-style-type: none;
+    margin: 0;
+    height: 10px;
+    width: 200px;
+    background-color: palegreen;
+    display: inline-block;
+}
+
+ul {
+    border: 1px solid orange;
+    height: 100px;
+    width: 100px; 
+}
+ @media (min-width: 576px) and (max-width: 805px) {}
+    body {
+        background-color: chocolate;
+    }
+    li {
+        display: inline;
+    }  */
+
