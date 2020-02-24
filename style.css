@@ -234,7 +234,7 @@ main {
   transform: scale(1.5);
 }
 
-.video  {
+#checkpoint2  {
   padding-left: 8vw;
   position: relative;
   grid-column: 1 / 3;
