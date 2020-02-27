@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./ttt.css">
+</head>
+<body>
+  <div class="main-container">
+    <div>
+      <!-- <h2>Choose:</h2>
+      <button onclick="playerX" class="playerX"></button> X </button>
+      <button onclick="playerO" class="playerO"> O </button> -->
+    </div>
+    <div class="board">
+      <div class="row">
+        <div class="clickBox" id="l0 r1c1" 
+        ></div>
+        <div class="clickBox" id="l1 r1c2"></div>
+        <div class="clickBox" id="l2 r1c3" onclick="addGamePiece(this)"></div>
+      </div>
+      <div class="row"> 
+        <div class="clickBox" id="l3 r2c1" onclick="addGamePiece(this)"></div>
+        <div class="clickBox" id="l4 r2c2" onclick="addGamePiece(this)"></div>
+        <div class="clickBox" id="l5 r2c3" onclick="addGamePiece(this)"></div>
+      </div> 
+      <div class="row"> 
+        <div class="clickBox" id="l6 r3c1" onclick="addGamePiece(this)"></div>
+        <div class="clickBox" id="l7 r3c2" onclick="addGamePiece(this)"></div>
+        <div class="clickBox" id="l8 r3c3" onclick="addGamePiece(this)"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./ttt.js"></script>
+</body>
+</html>
