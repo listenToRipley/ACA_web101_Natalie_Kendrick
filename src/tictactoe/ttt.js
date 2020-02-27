@@ -1,37 +1,80 @@
 // get an element from the DOM
-// var mainContainer = document.getElementsByClassName('.mainContainer')
-// var mainContainerQuery = document.querySelector('.mainContainer')
-// console.log('.mainContainer', mainContainer)
-// console.log('.mainContainerQuery', mainContainerQuery)
-// var body = document.querySelector('body')
-// body.style.margin = 0;
-// mainContainerQuery.style.backgroundColor = 'green'
-// mainContainer.style.height = '100%';
-// mainContainer[0].style.width = '100%';
-// mainContainerQuery[0].style.display = 'flex'
-// mainContainerQuery[0].style.justifyContent = 'center'
-// mainContainerQuery.style.alignItems = 'center'
+var mainContainer = document.getElementsByClassName('main-container');
 
-// // create Element
-// var board = document.createElement('div')
-// mainContainerQuery.appendChild(board)
+var mainContainerQuery = document.querySelector('.main-container');
 
-// // create a class for tic tac toe board
-// board.className = 'board'
-// // add style
-// board.style.width = '50%'
-// board.style.height = '50%'
-// board.style.border = '2px solid black'
+console.log('mainContainer', mainContainer);
 
-// // create a function
-// function backgroundRed (borderBox) {
-// console.log('borderBox', borderBox)
-// return borderBox.innerText = 'Don\'t click me'
-// // mainContainerQuery.style.backgroundColor = 'red'
-// mainContainerQuery.classList.toggle('red');
+console.log('mainContainerQuery', mainContainerQuery);
 
-//https://www.youtube.com/watch?v=yaPUl31nypk
+var body = document.querySelector('body')
+  body.style.margin = 0;
+  mainContainerQuery.style.backgroundColor = 'green'
+  mainContainerQuery.style.display = 'flex';
+  mainContainerQuery.style.justifyContent = 'center';
+  mainContainerQuery.style.alignItems = 'center';
 
+  mainContainer[0].style.height = '100%';
+  mainContainer[0].style.width = '100%';
+  
+
+// create Element
+var board = document.createElement('div');
+mainContainerQuery.appendChild(board);
+
+// create a class for tic tac toe board
+board.className = '.board';
+// add style
+board.style.width = '50%';
+board.style.height = '50%';
+board.style.border = '2px solid black';
+
+// create a function
+function backgroundRed (thatThang) {
+console.log('thatThang', thatThang);
+thatThang.innerText = 'Dont click me'
+// mainContainerQuery.style.backgroundColor = 'red'
+mainContainerQuery.classList.toggle('red');
+};
+
+//version 2
+
+var previousPlay = null
+function addGamePiece (selectedElement) {
+// creating element
+var newElement = document.createElement('h1')
+
+if (previousPlay === 'x') {
+newElement.innerText = 'o'
+previousPlay = 'o'
+} else if (previousPlay === 'o') {
+newElement.innerText = 'x'
+previousPlay = 'x'
+} else {
+newElement.innerText = 'x'
+previousPlay = 'x'
+}
+selectedElement.appendChild(newElement)
+}
+
+let grid = () => Array.from(document.getElementsByClassName('clickBox'));
+
+function board(grid) {
+  Number.parseInt(clickBoxE1.id.replace('l',''));
+}
+
+
+// this is supposed to limit how much characters can be in a box
+if(1 >= document.getElementsByClassName('clickBox').length) {
+  for (var i = 0; i < newElement.innerText.length; i++)
+    clickBoxE1[i].innerText = '';
+} else {
+  console(newElement)
+}
+
+const emptyBoard = () => grid().filter(_clickBoxE1 => _clickBoxE1.innerText === '');
+
+const winner = (arr) => arr.every(_clickBoxE1 => _clickBoxE1.innerText === arr[0].innerText && _clickBoxE1.innerText !== '');
 
 const winCombos = [
   // these are the locations on the board as seen by their ID
@@ -45,34 +88,38 @@ const winCombos = [
   [6, 4, 2],
 ];
 
-const grid = () => Array.from(document.getElementsByClassName('clickBox'));
 
-const board = (clickBoxE1) => Number.parseInt(clickBoxE1.id.replace('l',''));
+//https://www.youtube.com/watch?v=yaPUl31nypk
 
-const emptyBoard = () => grid().filter(_clickBoxE1 => _clickBoxE1.innerText === '');
 
-const winner = (arr) => arr.every(_clickBoxE1 => _clickBoxE1.innerText === arr[0].innerText && _clickBoxE1.innerText !== '');
+// const grid = () => Array.from(document.getElementsByClassName('clickBox'));
 
-const yourTurn = (index, letter) => document.getElementsByClassName('.board'[index].innerText) = letter;
+// const board = (clickBoxE1) => Number.parseInt(clickBoxE1.id.replace('l',''));
 
-const theirChoice = () => board(emptyBoard()[Math.floor(Math.random() * emptyBoard().length)]);
+// const emptyBoard = () => grid().filter(_clickBoxE1 => _clickBoxE1.innerText === '');
 
-const theirTurn =  () => {
-  disableListeners();
-  setTimeout(() => {
-    yourTurn(theirTurn(), 'O');
-  }, 1000);
-};
+// const winner = (arr) => arr.every(_clickBoxE1 => _clickBoxE1.innerText === arr[0].innerText && _clickBoxE1.innerText !== '');
 
-const clickFn = ($event) => {
-  yourTurn(board($event.target), 'X');
-  theirTurn();
-};
+// const yourTurn = (index, letter) => document.getElementsByClassName('.board'[index].innerText) = letter;
 
-const enableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.addEventListener('click', clickFn));
-const disableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.removeEventListener('click', clickFn));
+// const theirChoice = () => board(emptyBoard()[Math.floor(Math.random() * emptyBoard().length)]);
 
-enableListeners();
+// const theirTurn =  () => {
+//   disableListeners();
+//   setTimeout(() => {
+//     yourTurn(theirTurn(), 'o');
+//   }, 1000);
+// };
+
+// const clickFn = ($event) => {
+//   yourTurn(board($event.target), 'X');
+//   theirTurn();
+// };
+
+// const enableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.addEventListener('click', clickFn));
+// const disableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.removeEventListener('click', clickFn));
+
+// enableListeners();
 
 
 // }
