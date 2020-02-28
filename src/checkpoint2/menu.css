@@ -1,0 +1,258 @@
+
+body {
+  position: relative;
+  min-height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("../img/underwater.jpg");
+  background-size: contain;
+  font-family: puritan;
+  color: rgb(21,169,159);
+}
+
+.shadowBox {
+  font-family: Satisfy;
+  background: linear-gradient(164deg, rgba(5,5,5,1) 0%, rgba(0,0,0,0.4472163865546218) 100%);
+  box-shadow: 1px 1px rgb(21,169,159);
+}
+
+/* header  */
+
+#logo {
+  margin: 2% 0 0 5%;
+  height: 35%;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: radial-gradient(circle, rgba(176,196,222,.5) 0%, rgba(152, 244, 228,.5) 100%);
+  color:white;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+  overflow: hidden;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  justify-content: space-evenly;
+  text-align:center;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 30s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 8s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 20s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 25s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+.inner-header {
+  height:4em;
+  width:95vw;
+  margin: 0;
+  padding: 8px;
+}
+
+.flex { 
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  background-color: rgba(63, 175, 162, 0.575);
+}
+
+a {
+  display: flex;
+  font-size: 24px;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(229, 240, 213) ;
+  text-shadow: 2px 3px 3px rgb(33,36,97);
+  /* color:rgb(69, 107, 105);
+  text-shadow:1px 1px rgb(33,36,97) ; */
+}
+
+a:hover {
+  color: rgb(2, 167, 157);
+  text-shadow: 2px 2px rgb(33,36,97);
+  background: linear-gradient(164deg, rgba(5,5,5,1) 0%, rgba(0,0,0,0.4472163865546218) 100%);
+  padding: 8px;
+  justify-self: center;
+}
+
+a:visited {
+  color: rgb(84, 197, 245);
+  text-shadow: 2px 2px 3px rgb(229, 240, 213);
+}
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  color: #15a99f;
+}
+
+/* general */
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  text-justify: center;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+  text-justify: center;
+  display: inline-block;
+}
+
+/* footer */
+
+footer {
+  background: linear-gradient(164deg, rgba(5,5,5,1) 0%, rgba(0,0,0,0.4472163865546218) 100%);
+  right: 0;
+  bottom:0;
+  left:0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+.footerContact {
+  padding: 15px 0 0 15px;
+}
+
+/* icons links  */
+
+.socialIcon {
+  margin: 5px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 1016px) {
+
+  #welcome {
+    font-size: 20px;
+  }
+
+  .insideText {
+    font-size: 17px;
+    margin: 0;
+  }
+
+  .imgText p:nth-child(4) {
+    display: none;
+  }
+
+  .sirens {
+    width: 100px;
+    height: 100px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+
+  .inner-header {
+    width: 95vw;
+  }
+
+  .content {
+    height:30vh;
+  }
+
+  .shopImg {
+    width: 95vw;
+  }
+
+  .insideText {
+    font-size: 15px;
+  }
+
+  .imgText p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .imgText p:nth-child(4) {
+    display: none;
+  }
+
+  .intro {
+    font-size: 15px;
+    margin-top:5px;
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+  .descript {
+    margin-top: -17.5em;
+    box-shadow: none;
+    width: 6em;
+}
+
+  .events {
+  margin-left: 4%;
+  }
+
+  .sirens {
+    width: 100px;
+    height: 100px;
+  }
+
+  .history {
+    background-size: contain;
+  }
+
+}
+
