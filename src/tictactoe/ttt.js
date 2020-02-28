@@ -1,41 +1,46 @@
+
+
+
+
+
 // get an element from the DOM
-var mainContainer = document.getElementsByClassName('main-container');
+// var mainContainer = document.getElementsByClassName('main-container');
 
-var mainContainerQuery = document.querySelector('.main-container');
+// var mainContainerQuery = document.querySelector('.main-container');
 
-console.log('mainContainer', mainContainer);
+// console.log('mainContainer', mainContainer);
 
-console.log('mainContainerQuery', mainContainerQuery);
+// console.log('mainContainerQuery', mainContainerQuery);
 
-var body = document.querySelector('body')
-  body.style.margin = 0;
-  mainContainerQuery.style.backgroundColor = 'green'
-  mainContainerQuery.style.display = 'flex';
-  mainContainerQuery.style.justifyContent = 'center';
-  mainContainerQuery.style.alignItems = 'center';
+// var body = document.querySelector('body')
+//   body.style.margin = 0;
+//   mainContainerQuery.style.backgroundColor = 'green'
+//   mainContainerQuery.style.display = 'flex';
+//   mainContainerQuery.style.justifyContent = 'center';
+//   mainContainerQuery.style.alignItems = 'center';
 
-  mainContainer[0].style.height = '100%';
-  mainContainer[0].style.width = '100%';
+//   mainContainer[0].style.height = '100%';
+//   mainContainer[0].style.width = '100%';
   
 
-// create Element
-var board = document.createElement('div');
-mainContainerQuery.appendChild(board);
+// // create Element
+// var board = document.createElement('div');
+// mainContainerQuery.appendChild(board);
 
-// create a class for tic tac toe board
-board.className = '.board';
-// add style
-board.style.width = '50%';
-board.style.height = '50%';
-board.style.border = '2px solid black';
+// // create a class for tic tac toe board
+// board.className = '.board';
+// // add style
+// board.style.width = '50%';
+// board.style.height = '50%';
+// board.style.border = '2px solid black';
 
 // create a function
-function backgroundRed (thatThang) {
-console.log('thatThang', thatThang);
-thatThang.innerText = 'Dont click me'
+// function backgroundRed (thatThang) {
+// console.log('thatThang', thatThang);
+// thatThang.innerText = 'Dont click me'
 // mainContainerQuery.style.backgroundColor = 'red'
-mainContainerQuery.classList.toggle('red');
-};
+// mainContainerQuery.classList.toggle('red');
+// };
 
 //version 2
 
@@ -43,6 +48,7 @@ var previousPlay = null
 function addGamePiece (selectedElement) {
 // creating element
 var newElement = document.createElement('h1')
+
 
 if (previousPlay === 'x') {
 newElement.innerText = 'o'
@@ -57,7 +63,7 @@ previousPlay = 'x'
 selectedElement.appendChild(newElement)
 }
 
-let grid = () => Array.from(document.getElementsByClassName('clickBox'));
+// let grid = () => Array.from(document.getElementsByClassName('clickBox'));
 
 function board(grid) {
   Number.parseInt(clickBoxE1.id.replace('l',''));
@@ -65,8 +71,8 @@ function board(grid) {
 
 
 // this is supposed to limit how much characters can be in a box
-if(1 >= document.getElementsByClassName('clickBox').length) {
-  for (var i = 0; i < newElement.innerText.length; i++)
+if(document.getElementsByClassName('clickBox').length >=1) {
+  for (var i = 0; i < selectedElement.innerText.length; i++)
     clickBoxE1[i].innerText = '';
 } else {
   console(newElement)
