@@ -3,22 +3,18 @@ body {
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-#listSection {
-  text-align: center;
-}
-
 h1 {
   color: white;
   margin: 0px auto;
   padding: 20px;
 }
 
-/* #yourList {
+#yourList {
   padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-} */
+}
 
 ul {
   padding: 0;
@@ -42,18 +38,6 @@ li {
   width: 100%;
   margin: 1em;
   text-overflow: clip;
-}
-
-.notALi {
-  all: unset;
-}
-
-li:nth-child(2) {
-  all: unset;
-}
-
-li:nth-child(5) {
-  all: unset;
 }
 
 p {
@@ -103,7 +87,13 @@ input[type='remove'] {
   padding: 5px;
 }
 
-#done:checked {
+#done {
+  margin-left: 5em;
+  align-self: center;
+  justify-self: center;
+}
+
+.strike {
   text-decoration: line-through;
 }
 
@@ -114,4 +104,8 @@ input[type='remove'] {
 #itemField {
   margin-top: 60px;
   width: 10%;
+}
+
+#listSection {
+  text-align: center;
 }

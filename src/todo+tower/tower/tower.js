@@ -1,15 +1,14 @@
 // FYI, this is built with jQuery
 'use strict';
-
-var blue = ($('.dataRow').hasClass('blue') && $('.dataColor').hasClass('blue')); 
-
-var green = ($('.dataRow').hasClass('green') && $('.dataColor').hasClass('green'));
-
-var red = ($('.dataRow').hasClass('red') && $('.dataColor').hasClass('red'));
-
-var yellow = ($('.dataRow').hasClass('yellow') && $('.dataColor').hasClass('yellow')); 
-
 $(document).ready(function() {
+  var blue = ($('.dataRow').hasClass('blue') && $('.dataColor').hasClass('blue')); 
+
+  var green = ($('.dataRow').hasClass('green') && $('.dataColor').hasClass('green'));
+
+  var red = ($('.dataRow').hasClass('red') && $('.dataColor').hasClass('red'));
+
+  var yellow = ($('.dataRow').hasClass('yellow') && $('.dataColor').hasClass('yellow')); 
+
   let $block = null;
   
   var move = ($('.dataRow').click(function() {
