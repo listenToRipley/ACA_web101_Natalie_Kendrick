@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../reset.css">
+  <link rel="stylesheet" href="todo.css">
+  <title>To Do List</title>
+</head>
+<body>
+  <div id="listSection">
+    <h1 id="header">To-do list</h1>
+      <div>
+      <ul id="yourList">
+
+        <li class="notALi">
+          <input type="checkbox" name="done" id="done">
+          <li>
+
+        <li class="item">Finish your Projects</li>
+
+        <li class="notALi">
+          <button type="button" id="remove">X</button>
+            <li>
+      </ul>
+    </div>
+    <div id="newItemButton"><button href="#">new item</button></div>
+    <form id="newItemForm">
+      <input type="text" id="itemField" placeholder="Item" />
+      <input type="submit" id="add" value="add" />
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+  <script src="./todo.js"></script>
+</body>
+</html>
