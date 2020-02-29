@@ -7,15 +7,17 @@
   <title>Tower</title>
 </head>
 <body>
-    <div data-row class="red"></div>
-    <div data-row class="yellow"></div>
-    <div data-row class="green"></div>
-    <div data-row class="blue"></div>
-    <div data-row>
-      <div data-color="yellow" class="yellow"></div>
-      <div data-color="red" class="red"></div>
-      <div data-color="green" class="green"></div>
-      <div data-color="blue" class="blue"></div>
+    <div class="mainContainer">
+      <div dataRow class="dataRow red"></div>
+      <div dataRow class="dataRow yellow"></div>
+      <div dataRow class="dataRow green"></div>
+      <div dataRow class="dataRow blue"></div>
+      <div dataRow class="dataRow holder">
+        <div id="yellow" class="dataColor yellow"></div>
+        <div id="red" class="dataColor red"></div>
+        <div id="green" class="dataColor green"></div>
+        <div id="blue" class="dataColor blue"></div>
+      </div>
     </div>
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
