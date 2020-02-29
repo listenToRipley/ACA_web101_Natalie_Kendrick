@@ -1,215 +1,129 @@
+$(document).ready(function() {
+  var x = "x"
+  var o = "o"
+  var turns = 0;
 
+  // locations 
 
+  var l0 = $('#location0');
+  var l1 = $('#location1'); 
+  var l2 = $('#location2');  
+  var l3 = $('#location3');  
+  var l4 = $('#location4');  
+  var l5 = $('#location5');  
+  var l6 = $('#location6');  
+  var l7 = $('#location7');  
+  var l8 = $('#location8');  
 
+  var oWins = ($('#board li').on('click', function() {
+    if (
+    l0.hasClass('o') && l1.hasClass('o') && l2.hasClass('o') ||
+    l3.hasClass('o') && l4.hasClass('o') && l5.hasClass('o') ||
+    l6.hasClass('o') && l7.hasClass('o') && l8.hasClass('o') ||
+    l0.hasClass('o') && l4.hasClass('o') && l8.hasClass('o') ||
+    l2.hasClass('o') && l4.hasClass('o') && l6.hasClass('o') ||
+    l0.hasClass('o') && l3.hasClass('o') && l6.hasClass('o') ||
+    l1.hasClass('o') && l4.hasClass('o') && l7.hasClass('o') ||
+    l2.hasClass('o') && l5.hasClass('o') && l8.hasClass('o')
+    ) 
+      { alert('Winner is O!');
+      $('#board li').text(':)');
+      $('#board li').removeClass('disable');
+      $('#board li').removeClass('o');
+      $('#board li').removeClass('x');} 
+    }
+      )
+        ); 
 
+  var xWins = ($('#board li').on('click', function() {
+      if (
+      l0.hasClass('x') && l1.hasClass('x') && l2.hasClass('x') ||
+      l3.hasClass('x') && l4.hasClass('x') && l5.hasClass('x') ||
+      l6.hasClass('x') && l7.hasClass('x') && l8.hasClass('x') ||
+      l0.hasClass('x') && l4.hasClass('x') && l8.hasClass('x') ||
+      l2.hasClass('x') && l4.hasClass('x') && l6.hasClass('x') ||
+      l0.hasClass('x') && l3.hasClass('x') && l6.hasClass('x') ||
+      l1.hasClass('x') && l4.hasClass('x') && l7.hasClass('x') ||
+      l2.hasClass('x') && l5.hasClass('x') && l8.hasClass('x')
+      ) 
+        { alert('Winner is X!');
+        $('#board li').text(':)');
+        $('#board li').removeClass('disable');
+        $('#board li').removeClass('o');
+        $('#board li').removeClass('x');} 
+      }
+      
+          ));
 
-// get an element from the DOM
-// var mainContainer = document.getElementsByClassName('main-container');
+  var tie = ($('#board li').on('click', function() {
+        if(turns === 9) 
+        { alert('It\'s a tie!');
+          $('#board li').text(':)');
+          $('#board li').removeClass('disable');
+          $('#board li').removeClass('o');
+          $('#board li').removeClass('x');
+          turns = 0;} 
+      }
+        )
+          );
 
-// var mainContainerQuery = document.querySelector('.main-container');
+   var alternate = ($('#board li').on('click', function() {
+      if(turns%2 === 0) 
+        {turns++;
+        $(this).text(o);
+        $(this).addClass('disable o');
+        $('#board li').on('click', function() {
+          if (oWins === true) 
+          {
+            alert('Winner is O!');
+            turns = 0; } 
+          } //inside function closer
+            ) //click closer
+             } //related to the turn++ closer
+        else 
+          {
+          turns++;
+          $(this).text(x);
+          $(this).addClass('disable x');
+          $('#board li').on('click', function() {
+            if (xWins === true) {
+              alert('Winner is X!');
+              turns = 0 } } ) }
+             } // alternative function closer 
+              ) // click closer
+                ) // alternative var closer
 
-// console.log('mainContainer', mainContainer);
+        // compare and state if else statements 
+        $('#board li').on('click', function() {
+          if (oWins === true) {
+            alert('Winner is O!');
+            $('#board li').text(':)');
+            $('#board li').removeClass('disable');
+            $('#board li').removeClass('o');
+            $('#board li').removeClass('x');} 
+            else if (xWins === true) {
+              { alert('Winner is X!');
+              $('#board li').text(':)');
+              $('#board li').removeClass('disable');
+              $('#board li').removeClass('o');
+              $('#board li').removeClass('x');} 
+            } else {
+              return tie
+            }
+        });  
 
-// console.log('mainContainerQuery', mainContainerQuery);
+        $('#board li').click(function(event) {
+            $.event.preventDefault
+            if($(this).hasClass('disabled')) 
+        { alert('This spot is taken, find another one')} 
+          }
+        );
 
-// var body = document.querySelector('body')
-//   body.style.margin = 0;
-//   mainContainerQuery.style.backgroundColor = 'green'
-//   mainContainerQuery.style.display = 'flex';
-//   mainContainerQuery.style.justifyContent = 'center';
-//   mainContainerQuery.style.alignItems = 'center';
-
-//   mainContainer[0].style.height = '100%';
-//   mainContainer[0].style.width = '100%';
-  
-
-// // create Element
-// var board = document.createElement('div');
-// mainContainerQuery.appendChild(board);
-
-// // create a class for tic tac toe board
-// board.className = '.board';
-// // add style
-// board.style.width = '50%';
-// board.style.height = '50%';
-// board.style.border = '2px solid black';
-
-// create a function
-// function backgroundRed (thatThang) {
-// console.log('thatThang', thatThang);
-// thatThang.innerText = 'Dont click me'
-// mainContainerQuery.style.backgroundColor = 'red'
-// mainContainerQuery.classList.toggle('red');
-// };
-
-//version 2
-
-var previousPlay = null
-function addGamePiece (selectedElement) {
-// creating element
-var newElement = document.createElement('h1')
-
-
-if (previousPlay === 'x') {
-newElement.innerText = 'o'
-previousPlay = 'o'
-} else if (previousPlay === 'o') {
-newElement.innerText = 'x'
-previousPlay = 'x'
-} else {
-newElement.innerText = 'x'
-previousPlay = 'x'
-}
-selectedElement.appendChild(newElement)
-}
-
-// let grid = () => Array.from(document.getElementsByClassName('clickBox'));
-
-function board(grid) {
-  Number.parseInt(clickBoxE1.id.replace('l',''));
-}
-
-
-// this is supposed to limit how much characters can be in a box
-if(document.getElementsByClassName('clickBox').length >=1) {
-  for (var i = 0; i < selectedElement.innerText.length; i++)
-    clickBoxE1[i].innerText = '';
-} else {
-  console(newElement)
-}
-
-const emptyBoard = () => grid().filter(_clickBoxE1 => _clickBoxE1.innerText === '');
-
-const winner = (arr) => arr.every(_clickBoxE1 => _clickBoxE1.innerText === arr[0].innerText && _clickBoxE1.innerText !== '');
-
-const winCombos = [
-  // these are the locations on the board as seen by their ID
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [6, 4, 2],
-];
-
-
-//https://www.youtube.com/watch?v=yaPUl31nypk
-
-
-// const grid = () => Array.from(document.getElementsByClassName('clickBox'));
-
-// const board = (clickBoxE1) => Number.parseInt(clickBoxE1.id.replace('l',''));
-
-// const emptyBoard = () => grid().filter(_clickBoxE1 => _clickBoxE1.innerText === '');
-
-// const winner = (arr) => arr.every(_clickBoxE1 => _clickBoxE1.innerText === arr[0].innerText && _clickBoxE1.innerText !== '');
-
-// const yourTurn = (index, letter) => document.getElementsByClassName('.board'[index].innerText) = letter;
-
-// const theirChoice = () => board(emptyBoard()[Math.floor(Math.random() * emptyBoard().length)]);
-
-// const theirTurn =  () => {
-//   disableListeners();
-//   setTimeout(() => {
-//     yourTurn(theirTurn(), 'o');
-//   }, 1000);
-// };
-
-// const clickFn = ($event) => {
-//   yourTurn(board($event.target), 'X');
-//   theirTurn();
-// };
-
-// const enableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.addEventListener('click', clickFn));
-// const disableListeners = () => grid().forEach(_clickBoxE1 => _clickBoxE1.removeEventListener('click', clickFn));
-
-// enableListeners();
-
-
-// }
-
-// var previousPlay = null
-// function addGamePiece (selectedElement) {
-// var newElement = document.createElement('h1')
-
-// previousPlay = setGamePiece()
-// newElement.innerText = previousPlay
-// selectedElement.appendChild(newElement)
-// }
-
-// function setGamePiece() {
-// if (previousPlay === 'X') {
-// return 'O'
-// } else if (previousPlay === 'O') {
-// return 'X'
-// } else {
-// return 'X'
-// }
-// }
-
-
-// // const playerO = 'O';
-// // const playerX = 'X';
-
-// // this will be the winning standard
-// const winCombos = [
-//   // these are the locations on the board as seen by their ID
-//   [0, 1, 2],
-//   [3, 4, 5],
-//   [6, 7, 8],
-//   [0, 3, 6],
-//   [1, 4, 7],
-//   [2, 5, 8],
-//   [0, 4, 8],
-//   [6, 4, 2],
-// ]
-
-// const box = document.querySelectorAll('.box');
-// play();
-
-// function play() {
-//   document.querySelector(".endgame").style.display = "none";
-//   origBoard = Array.from(Array(9).keys());
-//   for (var i = 0; i < cell.length; i++) {
-//     box[i].innerText = '';
-//     box[i].style.removeProperty('background-color');
-//     box[i].addEventListener['click', turnClick, false];
-//   }
-// }
-
-// function turnClick(location) {
-//  turn(location.target.id, playerO)
-// }
-
-// // function turn(location, players) {
-// //   origBoard[locationId] = players;
-// //   document.getElementById(locationId).innerText = players;
-// //   let gameWon = checkWin(origBoard, players) 
-// //   if (gameWon) {
-// //    return gameOver(gameWon)
-// //   }
-
-// // function checkWin(board, players) {
-// //   let plays = boards.reduce((a, e, i) >= (e === players)) ? (a.concat(i) : a, []); 
-// // }
-
-// //   let gameWon = null;
-// //   for (let [index, win] of winCombos.entries()) {
-// //     if (win.every(elem => plays.indexOf(elem > -1))) {
-// //       gameWon = {index: index, players: players};
-// //       break
-// //     }
-// //   }
-// //   return gameWon;
-// // }
-
-// // function gaveOver(gameWon) {
-// //   for (let index of winCombos[gameWon.index]) {
-// //     document.getElementById(index).style.backgroundColor = gameWon.player == playerX ? "purple" : "yellow";
-// //   }
-// //   for (var i = 0; i < cell.length; i++) {
-// //     cells[i].removeElementListener('click', turnClick, false)
-// //   }
-// // }
+        // reset
+        $('#reset').on('click', function() {
+          $('#board li').text(':)');
+          $('#board li').removeClass('disable');
+          $('#board li').removeClass('o');
+          $('#board li').removeClass('x');
+        });
+  })

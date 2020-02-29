@@ -8,25 +8,29 @@
     </head>
     <body>
   <div class="main-container">
-    <div class="board">
-      <div class="row">
-        <div class="clickBox" id="l0" onclick="addGamePiece(this) "></div>
-        <div class="clickBox" id="l1" onclick="addGamePiece(this) "></div>
-        <div class="clickBox" id="l2" onclick="addGamePiece(this) "></div>
-      </div>
-      <div class="row">
-        <div class="clickBox" id="l3" onclick="addGamePiece(this) "></div>
-        <div class="clickBox" id="l4" onclick="addGamePiece(this) "></div>
-        <div class="clickBox" id="l5" onclick="addGamePiece(this) "></div>
-      </div>
-      <div class="row">
-        <div class="clickBox" id="l6" onclick="addGamePiece(this)"></div>
-        <div class="clickBox" id="l7" onclick="addGamePiece(this)"></div>
-        <div class="clickBox" id="L8" onclick="addGamePiece(this)"></div>
-      </div>
-      </div>
+      <header>
+        <h1>Tic Tac Toe</h1>
+      </header>
+      <ul id="board">
+        <li class="square" id="location0">:)</li>
+        <li class="square" id="location1">:)</li>
+        <li class="square" id="location2">:)</li>
+        <li class="square" id="location3">:)</li>
+        <li class="square" id="location4">:)</li>
+        <li class="square" id="location5">:)</li>
+        <li class="square" id="location6">:)</li>
+        <li class="square" id="location7">:)</li>
+        <li class="square" id="location8">:)</li> 
+      </ul>
+      <div class="clearfix"></div>
+      <footer>
+        <button id="reset">reset</button>
+      </footer>
     </div>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
     <script src="./ttt.js"></script>  
   </body>
 </html>
