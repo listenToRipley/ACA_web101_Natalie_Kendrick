@@ -1,0 +1,62 @@
+.dataRow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 34px;
+  margin: 25px;
+  border: 1px solid lightgray;
+}
+
+.holder {
+  background-color: none;
+}
+.dataRow.red {
+  background-color: #f6c5c5;
+}
+
+.dataRow.yellow {
+  background-color: #ffffa9;
+}
+
+.dataRow.green {
+  background-color: #baf6ba;
+}
+
+.dataRow.blue {
+  background-color: aliceblue;
+}
+
+.dataColor {
+  width: 25px;
+  float: left;
+}
+
+#blue {
+  height: 33px;
+  width: 25px;
+  background-color: blue;
+  
+}
+
+#green {
+  height: 33px;
+  width: 25px;
+  background-color: green;
+}
+
+#red  {
+  height: 33px;
+  width: 25px;
+  background-color: red;
+}
+
+#yellow  {
+  height: 33px;
+  width: 25px;
+  background-color: yellow;
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}
