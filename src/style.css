@@ -1,0 +1,269 @@
+body {
+  display: flex;
+  font-family: 'Lexend Deca', sans-serif;
+  width: 100%;
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  color: rgb(5, 108, 121);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 5em;
+  padding: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+nav > a {
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+  justify-content: space-around;
+  align-self: center; 
+}
+
+a:link {
+  margin: 10px auto;
+  color: rgb(5, 107, 121);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a span {
+  display: none;
+  font: 15px;
+}
+
+
+nav a span:hover  {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid goldenrod;
+  width: 50px;
+}
+
+nav:hover span{
+  display: block;
+  font-size: 10px;
+  color:red;
+}
+
+a:visited {
+  color:goldenrod;
+}
+
+.fa-memory {
+  writing-mode: sideways-lr;
+}
+
+.logo {
+  max-width: 4em;
+  max-height: 5em;
+  align-self: flex-start;
+  justify-content: center;
+  padding: 2px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-image: url(./src/img/movingboxes.gif);
+  background-repeat: repeat;
+  background-size: 100vh;
+}
+
+
+#profile-pic{
+  width: 40%;
+  border-radius: 50%;
+  margin-left: 24%;
+  box-shadow: inset 1px 0px 20px 13px aliceblue;
+  padding: 20px;
+}
+
+.text {
+  margin-left: 15%;
+}
+
+/* used code pen https://codepen.io/minonoflight/pen/wvaWYbP */
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+
+.animate span:nth-of-type(15) {
+	animation-delay: .6s;
+}
+
+.animate span:nth-of-type(16) {
+	animation-delay: .65s;
+}
+
+.animate span:nth-of-type(17) {
+	animation-delay: .7s;
+}
+
+.animate span:nth-of-type(18) {
+	animation-delay: .66s;
+}
+
+.animate span:nth-of-type(19) {
+	animation-delay: .8s;
+}
+
+.animate span:nth-of-type(20) {
+	animation-delay: .67s;
+}
+
+.animate span:nth-of-type(21) {
+	animation-delay: .9s;
+}
+
+.animate span:nth-of-type(22) {
+	animation-delay: .68s;
+}
+
+
+.animate span {
+  display: inline-block;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide .5s forwards;
+}
+
+@keyframes sideSlide {
+	60% {
+		transform: translate(20px, 0) scale(1);
+		color: white;
+	}
+
+	80% {
+		transform: translate(20px, 0) scale(1);
+		color: white;
+	}
+
+	99% {
+		transform: translate(0) scale(1.2);
+		color:goldenrod;
+	}
+
+	100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: white;
+	}
+}
+
+#name {
+  margin: 5% auto;
+  padding: auto;
+  border-bottom: 2px solid skyblue;
+  font-family: 'Monoton', cursive;
+  font-size: 35px;
+  background-color:rgba(5, 108, 121, 0.432);
+}
+
+#currentTitle {
+  margin: 3%;
+  font-size: 25px;
+  color: goldenrod;
+  background-color:rgba(5, 108, 121, 0.432);
+  -webkit-text-stroke: 1px black;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.webpgEx {
+  transition: transform .2s;
+  width: 200px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.webpgEx:hover {
+  transform: scale(1.5);
+}
+
+.video  {
+  padding-left: 8vw;
+  position: relative;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  width: 300px;
+}
+
+.dash {
+  position: relative;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.nasa {
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+a img {
+  width: 200px;
+  padding: 0;
+}
+
+footer{
+background-color: black;
+text-orientation: mixed;
+writing-mode: vertical-rl;
+width: 3em;
+padding: 5px 10px;
+display: flex;
+}

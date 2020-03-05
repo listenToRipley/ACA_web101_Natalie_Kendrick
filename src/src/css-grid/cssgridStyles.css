@@ -1,0 +1,420 @@
+body {
+    background-image: url(mushrooms.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display SC', serif;
+    color: #ffebc7;
+}
+
+main.main-container {
+    display: grid;
+    grid-template-columns: 8% repeat(4, 1fr) 8%;
+    grid-template-rows: 20% 15% 1fr 20%;
+    grid-gap: 20px;
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.top {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2/3;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2% auto;
+}
+
+#greeting {
+    align-self: center;
+    color: #ffebc7;
+}
+
+h3 {
+    font-family: 'Philosopher', sans-serif;
+}
+
+#toDo {  
+    grid-column: 4/6;
+    grid-row: 3/7;
+    font-family: 'Philosopher', sans-serif;
+}
+
+/* calculator  */
+
+/* ------I can't take credit for this, stole it from Code Pen: https://codepen.io/yukselyumrutas/pen/NQrVQP ------ */
+
+#calculator {
+    background: 1px solid springgreen;
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+#number.sublist{
+    display: grid;
+    list-style: none;
+}
+
+.container{
+    width: 280px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .screen{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 120px;
+    background-color:rgb(33, 67, 94, 40%);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .numbers{
+    align-self: center;
+    text-align: right;
+    padding: 5px 20px;
+    color: #ffff;
+  }
+  .top{
+    font-size: 25px;
+    color:#90A0AC;
+  }
+  .bottom{
+    font-size: 40px;
+  }
+  .row{
+    position: relative;
+    display: flex;
+  }
+  button{
+    width: 70px;
+    padding: 25px 0 25px 0;
+    border-color: #90a0ac38;
+    border-width: thin; 
+    font-size: 18px;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  button:active {
+    background-image: linear-gradient(to bottom, #d4dbe0ba 0%, #a9b6c036 51%, #7c909eba 100%);
+  } 
+  button:focus {
+      outline: none;
+  }
+  .row:nth-child(2) button{
+    background-color: rgb(80, 106, 127, 40%);
+    color: #f2f2f2;
+  }
+  .row:nth-child(3) button{
+    background-color: rgb(124, 144, 158, 40%);
+    color: #f2f2f2;
+  }
+  .row:nth-child(4) button{
+    background-color: rgb(169, 182, 192, 40%);
+    color: #f2f2f2;
+  }
+  .row:nth-child(5) button{
+    background-color: rgb(212, 219, 224, 40%);
+    color: #f2f2f2
+  }
+  .row:nth-child(6) button{
+    background-color: rgb(246, 246, 246, 40%);
+    color: #f2f2f2;
+  }
+  .row:nth-child(6) button:last-child {
+    background-color: rgb(246, 147, 45, 40%);
+    color: #f2f2f2;
+    border-bottom-right-radius: 6px;
+  }
+  .row:nth-child(6) button:first-child {
+    width: 140px;
+    border-bottom-left-radius: 6px;
+    text-align: left;
+    padding: 25px 30px;
+  }
+  button:nth-child(4){
+    text-align: right;
+    padding: 25px 30px;
+  }
+
+/* clock code */
+
+#time {
+    grid-column: 5/6;
+    grid-row: 2;
+    align-self: center;
+    font-size: 30px;
+}
+
+.seconds,
+.seconds-left,
+.minutes-left,
+.minutes,
+.hours {
+  position: relative;
+  height: 12px;
+  width: 6px;
+  display:inline-block;
+  align-content: flex-end;
+}
+
+.hours {
+  width: 14px;
+}
+
+.seconds span,
+.seconds-left span,
+.minutes-left span,
+.minutes span,
+.hours span {
+  position: absolute;
+  top: 0;
+  left:0;
+  opacity: 0;
+} 
+
+/* ------I can't take credit for this, stole it from Code Pen:  ------ */
+/*--------------hours-----------------*/
+.h-0 {
+  animation: 43200s twelve linear infinite;
+}
+.h-1 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 3600s;
+}
+.h-2 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 7200s;
+}
+.h-3 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 10800s;
+}
+.h-4 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 14400s;
+}
+.h-5 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 18000s;
+}
+.h-6 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 21600s;
+}
+.h-7 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 25200s;
+}
+.h-8 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 28800s;
+}
+.h-9 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 32400s;
+}
+.h-10 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 36000s;
+}
+.h-11 {
+  animation: 43200s twelve linear infinite;
+  animation-delay: 39600s;
+}
+/*--------------hours-end----------------*/
+
+/*---------------minutes----------------*/
+.ml-0 {
+  animation: 3600s six linear infinite;
+}
+.ml-1 {
+  animation: 3600s six linear infinite;
+  animation-delay: 600s;
+}
+.ml-2 {
+  animation: 3600s six linear infinite;
+  animation-delay: 1200s;
+}
+.ml-3 {
+  animation: 3600s six linear infinite;
+  animation-delay: 1800s;
+}
+.ml-4 {
+  animation: 3600s six linear infinite;
+  animation-delay: 2400s;
+}
+.ml-5 {
+  animation: 3600s six linear infinite;
+  animation-delay: 3000s;
+}
+
+.m-0 {
+  animation: 600s ten linear infinite;
+}
+.m-1 {
+  animation: 600s ten linear infinite;
+  animation-delay: 60s;
+}
+.m-2 {
+  animation: 600s ten linear infinite;
+  animation-delay: 120s;
+}
+.m-3 {
+  animation: 600s ten linear infinite;
+  animation-delay: 180s;
+}
+.m-4 {
+  animation: 600s ten linear infinite;
+  animation-delay: 240s;
+}
+.m-5 {
+  animation: 600s ten linear infinite;
+  animation-delay: 300s;
+}
+.m-6 {
+  animation: 600s ten linear infinite;
+  animation-delay: 360s;
+}
+.m-7 {
+  animation: 600s ten linear infinite;
+  animation-delay: 420s;
+}
+.m-8 {
+  animation: 600s ten linear infinite;
+  animation-delay: 480s;
+}
+.m-9 {
+  animation: 600s ten linear infinite;
+  animation-delay: 540s;
+}
+.m-10 {
+  animation: 600s ten linear infinite;
+  animation-delay: 600s;
+}
+/*-------------minutes-end------------*/
+
+
+/*-------------seconds---------------*/
+.sl-0 {
+  animation: 60s six linear infinite;
+}
+
+.sl-1 {
+  animation: 60s six linear infinite;
+  animation-delay: 10s;
+}
+
+.sl-2 {
+  animation: 60s six linear infinite;
+  animation-delay: 20s;
+}
+.sl-3 {
+  animation: 60s six linear infinite;
+  animation-delay: 30s;
+}
+.sl-4 {
+  animation: 60s six linear infinite;
+  animation-delay: 40s;
+}
+.sl-5 {
+  animation: 60s six linear infinite;
+  animation-delay: 50s;
+}
+.sl-6 {
+  animation: 60s six linear infinite;
+  animation-delay: 60s;
+}
+
+.s-0 {
+  animation: 10s ten linear infinite;
+}
+.s-1 {
+  animation: 10s ten linear infinite;
+  animation-delay: 1s;
+}
+.s-2 {
+  animation: 10s ten linear infinite;
+  animation-delay: 2s;
+}
+.s-3 {
+  animation: 10s ten linear infinite;
+  animation-delay: 3s;
+}
+.s-4 {
+  animation: 10s ten linear infinite;
+  animation-delay: 4s;
+}
+.s-5 {
+  animation: 10s ten linear infinite;
+  animation-delay: 5s;
+}
+.s-6 {
+  animation: 10s ten linear infinite;
+  animation-delay: 6s;
+}
+.s-7 {
+  animation: 10s ten linear infinite;
+  animation-delay: 7s;
+}
+.s-8 {
+  animation: 10s ten linear infinite;
+  animation-delay: 8s;
+}
+.s-9 {
+  animation: 10s ten linear infinite;
+  animation-delay: 9s;
+}
+.s-10 {
+  animation: 10s ten linear infinite;
+  animation-delay: 10s;
+}
+/*-------------seconds-end---------------*/
+
+@keyframes ten {
+  0% {
+    opacity: 1;
+  }
+  9.9% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes six {
+  0% {
+    opacity: 1;
+  }
+  16.599% {
+    opacity: 1;
+  }
+  16.6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes twelve {
+  0% {
+    opacity: 1;
+  }
+  8.33% {
+    opacity: 1;
+  }
+  8.34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0
+  }
+}
