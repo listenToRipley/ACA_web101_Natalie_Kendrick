@@ -1,0 +1,100 @@
+* {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Tangerine', cursive;
+  margin-bottom: 1em;
+}
+
+.container-fluid {
+  font-family: 'Bubbler One', sans-serif;
+}
+
+.jumbotron {
+  background-color: cornflowerblue;
+}
+
+.addCount {
+  padding: 10px;
+  margin-left: 13%;
+}
+
+.card {
+  background: rgb(34,193,195);
+background: radial-gradient(circle, rgba(34,193,195,0.9161811440677966) 0%, rgba(253,187,45,0.7805879237288136) 100%);
+}
+
+#spinThis {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border: none;
+  margin-left: -2vw;
+  margin-top: 2vh;
+}
+
+button:active {
+  background-color: #22c1c3;
+}
+
+#spinThis:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style-: none;
+}
+
+img {
+  width: 40vw;
+}
+
+#cardFont {
+  width: 50%;
+  margin-left: -2vw;
+  margin-top: 2vh;
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  min-height: 200px;
+}
+
+.reset {
+  background: #21c5c5;
+  box-shadow: 3px 2px 6px 4px #e387f39c;
+  border-radius: 15px;
+  border: none;
+  font-size: 25px;
+  margin-right: 1.5em;
+}
+
+
+
+#spinNow:active {
+  transform: rotate(345deg);
+  transition-duration :.08s
+}
+
+@media screen and (min-width: 870px) and (max-width: 869px) {
+  h1 {
+    font-size: 37px;
+    text-align: start;
+  }
+
+  .reset {
+    font-size: 15px;
+  }
+
+  h5 {
+    font-size: 35px;
+    padding-top: -1%;
+  }
+  #cardFont {
+    font-size: 25px;
+  }
+  img{
+    width: 360px
+}
+}
